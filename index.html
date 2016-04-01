@@ -1,157 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!--Set title-->
-    <title>Yash Srivastav</title>
-    <!--Set charset-->
-    <meta charset="utf-8">
-    <!--set favicon-->
-    <link rel="shortcut icon" href="favicon.ico">
-    <!--set meta properties-->
-    <meta name="description" content="Homepage of Yash Srivastav" />
-    <meta name="keywords" content="yash, srivastav, robocon, iit, iit kanpur, iitk, kolkata, yash srivastav, cse, computer science" />
-    <meta name="author" content="Yash Srivastav" />
 
-    <!--Import Google Icon Font-->
-    <!--<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+<head>
+  <!--Set title-->
+  <title>Yash Srivastav</title>
+  <!--Set charset-->
+  <meta charset="utf-8">
+  <!--set favicon-->
+  <link rel="shortcut icon" href="favicon.ico">
+  <!--set meta properties-->
+  <meta name="description" content="Homepage of Yash Srivastav" />
+  <meta name="keywords" content="yash, srivastav, robocon, iit, iit kanpur, iitk, kolkata, yash srivastav, cse, computer science" />
+  <meta name="author" content="Yash Srivastav" />
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!--Script for generating random quote-->
-    <script>
+  <!--Import Google Icon Font-->
+  <!--<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Script for generating random quote-->
+  <script>
     var request = new XMLHttpRequest();
     request.onload = function() {
       // get the file contents
       var fileContent = this.responseText;
       // split into lines
-      var fileContentLines = fileContent.split( '%' );
+      var fileContentLines = fileContent.split('%');
       // get a random index (line number)
-      var randomLineIndex = Math.floor( Math.random() * fileContentLines.length );
+      var randomLineIndex = Math.floor(Math.random() * fileContentLines.length);
       // extract the value
-      var randomLine = fileContentLines[ randomLineIndex ];
+      var randomLine = fileContentLines[randomLineIndex];
       // add the random line in a div
-      document.getElementById( 'random-quote' ).innerHTML = randomLine;
+      document.getElementById('random-quote').innerHTML = randomLine;
     };
-    request.open( 'GET', './science', true );
+    request.open('GET', './science', true);
     request.send();
-    </script>
-  </head>
+  </script>
+</head>
 
-  <body>
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <!--Introduction-->
-    <div class="intro blue-grey lighten-2 z-depth-1">
-      <h1 class="grey-text text-lighten-5">Yash Srivastav <i class="mdi-action-home"></i></h1>
-      <h5 class="grey lighten-4 grey-text text-darken-1">CSE Freshman, IIT Kanpur</h5>
-    </div>
-    <!--Random Quote with link to ESC101-->
-    <div class="container phrase">
-      <div class="row">
-        <div class="col s12 m6 l6 offset-m3 offset-l3">
-          <!--<h5> A Random Quote </h5>-->
-          <div class="card blue-grey lighten-4 z-depth-1">
-            <div class="card-content black-text" id="random-quote">
-            </div>
+<body>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <!--Introduction-->
+  <div class="intro blue-grey lighten-2 z-depth-1">
+    <h1 class="grey-text text-lighten-5">Yash Srivastav <i class="mdi-action-home"></i></h1>
+    <h5 class="grey lighten-4 grey-text text-darken-1">CSE Freshman, IIT Kanpur</h5>
+  </div>
+  <!--Random Quote with link to ESC101-->
+  <div class="container phrase">
+    <div class="row">
+      <div class="col s12 m6 l6 offset-m3 offset-l3">
+        <!--<h5> A Random Quote </h5>-->
+        <div class="card blue-grey lighten-4 z-depth-1">
+          <div class="card-content black-text" id="random-quote">
           </div>
         </div>
-        <div class="col s12 m2 l2 offset-m1 offset-l1">
-          <h6> You might be here for: </h6>
-          <a class="waves-effect waves-dark blue-grey lighten-4 z-depth-1 grey-text text-darken-1 btn" href="http:/home.iitk.ac.in/~yashsriv/ESC101">ESC101</a>
-        </div>
+      </div>
+      <div class="col s12 m2 l2 offset-m1 offset-l1">
+        <h6> You might be here for: </h6>
+        <a class="waves-effect waves-dark blue-grey lighten-4 z-depth-1 grey-text text-darken-1 btn" href="http:/home.iitk.ac.in/~yashsriv/ESC101">ESC101</a>
       </div>
     </div>
-    <!--About-->
-    <!--<div class="blue-grey lighten-2 z-depth-1">-->
-    <hr class="stylishhr"></hr>
-    <div class="container about">
-      <h5>About Me</h5>
-      <h6>Let me introduce myself</h6>
-      <hr>
-      <!--A Single Row-->
-      <div class="row">
-        <!--One Column contains Story-->
-        <div class="col s12 m4 l4">
-          <!--In a card-->
-          <h6 class="black-text">Story</h6>
-          <!--Heading is in black, rest white-->
-          <div class="card blue-grey lighten-4 z-depth-1">
-            <div class="card-content black-text">
-              <p> I love to code, enjoy life and meet new people.</p>
-              <p> I am a first year(Y15) undergraduate in the department of Computer
-              Science and Engineering at Indian Institue of Technology, Kanpur.</p>
-            </div>
+  </div>
+  <!--About-->
+  <!--<div class="blue-grey lighten-2 z-depth-1">-->
+  <hr class="stylishhr"></hr>
+  <div class="container about">
+    <h5>About Me</h5>
+    <h6>Let me introduce myself</h6>
+    <hr>
+    <!--A Single Row-->
+    <div class="row">
+      <!--One Column contains Story-->
+      <div class="col s12 m4 l4">
+        <!--In a card-->
+        <h6 class="black-text">Story</h6>
+        <!--Heading is in black, rest white-->
+        <div class="card blue-grey lighten-4 z-depth-1">
+          <div class="card-content black-text">
+            <p> I love to code, enjoy life and meet new people.</p>
+            <p> I am a first year(Y15) undergraduate in the department of Computer Science and Engineering at Indian Institue of Technology, Kanpur.</p>
           </div>
         </div>
-        <!--One contains Profile-->
-        <div class="col s12 m4 l4">
-          <!--In a card-->
-          <h6 class="black-text">Profile</h6>
-          <!--Heading is in black, rest white-->
-          <div class="card blue-grey lighten-4 z-depth-1">
-            <div class="card-content">
-              <img src="images/profile.png" class="circle responsive-img" width="80" height="80">
-              <br>
-              <a href="resume.pdf" class="black-text">RESUME</a>
-            </div>
-            <!--<div class="card-action">-->
-            <!--<a href="./ESC101">ESC101</a>-->
-            <!--</div>-->
+      </div>
+      <!--One contains Profile-->
+      <div class="col s12 m4 l4">
+        <!--In a card-->
+        <h6 class="black-text">Profile</h6>
+        <!--Heading is in black, rest white-->
+        <div class="card blue-grey lighten-4 z-depth-1">
+          <div class="card-content">
+            <img src="images/profile.png" class="circle responsive-img" width="80" height="80">
+            <br>
+            <a href="resume.pdf" class="black-text">RESUME</a>
           </div>
+          <!--<div class="card-action">-->
+          <!--<a href="./ESC101">ESC101</a>-->
+          <!--</div>-->
         </div>
-        <!--One contains current jobs-->
-        <div class="col s12 m4 l4">
-          <!--Heading is in black, rest white-->
-          <h6 class="black-text">Jobs</h6>
-          <ul class="collapsible z-depth-1">
-            <li class="active">
-              <div class="collapsible-header blue-grey lighten-4">Student</div>
-              <div class="collapsible-body"><p>Student at IIT Kanpur</p></div>
-            </li>
-            <li>
-              <div class="collapsible-header blue-grey lighten-4">Coder</div>
-              <div class="collapsible-body"><p>Image Processing, Robocon IIT Kanpur</p></div>
-            </li>
-            <li>
-              <div class="collapsible-header blue-grey lighten-4">Web Developer</div>
-              <div class="collapsible-body"><p>I try very hard to maintain this site</p></div>
-            </li>
-            </u1>
-        </div>
+      </div>
+      <!--One contains current jobs-->
+      <div class="col s12 m4 l4">
+        <!--Heading is in black, rest white-->
+        <h6 class="black-text">Jobs</h6>
+        <ul class="collapsible z-depth-1">
+          <li class="active">
+            <div class="collapsible-header blue-grey lighten-4">Student</div>
+            <div class="collapsible-body">
+              <p>Student at IIT Kanpur</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header blue-grey lighten-4">Coder</div>
+            <div class="collapsible-body">
+              <p>Image Processing, Robocon IIT Kanpur</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header blue-grey lighten-4">Web Developer</div>
+            <div class="collapsible-body">
+              <p>I try very hard to maintain this site</p>
+            </div>
+          </li>
+          </u1>
       </div>
     </div>
-    <hr class="stylishhr"></hr>
-    <!--</div>-->
-    <!--Contact-->
-    <div class="container contact">
-      <h5>Contact</h5>
-      <h6>Get in touch with me</h6>
-      <hr>
-      <div class="row">
-        <div class="col s12 m12 l12">
-          <h6 class="mdi-action-home">Address: </h6>
-          C-347, Hall 10, IIT Kanpur, India<br>
-          <h6 class="mdi-hardware-phone-android">Phone: </h6>
-          +91 7054133662<br>
-          <h6 class="mdi-communication-email">Email: </h6>
-          yashsriv@iitk.ac.in<br>
-          <h6 class="mdi-action-open-in-browser">Website: </h6>
-          http://home.iitk.ac.in/~yashsriv/<br>
-        </div>
+  </div>
+  <hr class="stylishhr"></hr>
+  <!--</div>-->
+  <!--Contact-->
+  <div class="container contact">
+    <h5>Contact</h5>
+    <h6>Get in touch with me</h6>
+    <hr>
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <h6 class="mdi-action-home">Address: </h6> C-347, Hall 10, IIT Kanpur, India<br>
+        <h6 class="mdi-hardware-phone-android">Phone: </h6> +91 7054133662<br>
+        <h6 class="mdi-communication-email">Email: </h6> yashsriv@iitk.ac.in
+        <br>
+        <h6 class="mdi-action-open-in-browser">Website: </h6> http://home.iitk.ac.in/~yashsriv/
+        <br>
       </div>
     </div>
-    <hr class="stylishhr"></hr>
-    <footer>
-      <div class="footer-copyright">
-        <div class="container" style="text-align: center;">
-          © Copyright 2016 | All Rights Reserved | Designed and Developed by <b> Yash Srivastav </b>
-        </div>
+  </div>
+  <hr class="stylishhr"></hr>
+  <footer>
+    <div class="footer-copyright">
+      <div class="container" style="text-align: center;">
+        © Copyright 2016 | All Rights Reserved | Designed and Developed by <b> Yash Srivastav </b>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
