@@ -21,31 +21,9 @@
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--Script for generating random quote-->
-  <script>
-    var request = new XMLHttpRequest();
-    request.onload = function() {
-      // get the file contents
-      var fileContent = this.responseText;
-      // split into lines
-      var fileContentLines = fileContent.split('%');
-      // get a random index (line number)
-      var randomLineIndex = Math.floor(Math.random() * fileContentLines.length);
-      // extract the value
-      var randomLine = fileContentLines[randomLineIndex];
-      // add the random line in a div
-      document.getElementById('random-quote').innerHTML = randomLine;
-    };
-    request.open('GET', './science', true);
-    request.send();
-  </script>
 </head>
 
 <body>
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
   <!--Introduction-->
   <div class="intro blue-grey lighten-2 z-depth-1">
     <h1 class="grey-text text-lighten-5">Yash Srivastav <i class="mdi-action-home"></i></h1>
@@ -69,7 +47,7 @@
   </div>
   <!--About-->
   <!--<div class="blue-grey lighten-2 z-depth-1">-->
-  <hr class="stylishhr"></hr>
+  <hr class="stylishhr">
   <div class="container about">
     <h5>About Me</h5>
     <h6>Let me introduce myself</h6>
@@ -127,11 +105,11 @@
               <p>I try very hard to maintain this site</p>
             </div>
           </li>
-          </u1>
+        </ul>
       </div>
     </div>
   </div>
-  <hr class="stylishhr"></hr>
+  <hr class="stylishhr">
   <!--</div>-->
   <!--Contact-->
   <div class="container contact">
@@ -149,7 +127,7 @@
       </div>
     </div>
   </div>
-  <hr class="stylishhr"></hr>
+  <hr class="stylishhr">
   <footer>
     <div class="footer-copyright">
       <div class="container" style="text-align: center;">
@@ -157,6 +135,28 @@
       </div>
     </div>
   </footer>
+  <!--Script for generating random quote-->
+  <script>
+    var request = new XMLHttpRequest();
+    request.onload = function() {
+      // get the file contents
+      var fileContent = this.responseText;
+      // split into lines
+      var fileContentLines = fileContent.split('%');
+      // get a random index (line number)
+      var randomLineIndex = Math.floor(Math.random() * fileContentLines.length);
+      // extract the value
+      var randomLine = fileContentLines[randomLineIndex];
+      // add the random line in a div
+      document.getElementById('random-quote').innerHTML = randomLine;
+    };
+    request.open('GET', './science', true);
+    request.send();
+  </script>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js" async></script>
+  <script type="text/javascript" src="js/materialize.min.js" async></script>
+  <script type="text/javascript" src="js/script.js" async></script>
 </body>
 
 </html>
