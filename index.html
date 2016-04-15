@@ -135,28 +135,10 @@
       </div>
     </div>
   </footer>
-  <!--Script for generating random quote-->
-  <script>
-    var request = new XMLHttpRequest();
-    request.onload = function() {
-      // get the file contents
-      var fileContent = this.responseText;
-      // split into lines
-      var fileContentLines = fileContent.split('%');
-      // get a random index (line number)
-      var randomLineIndex = Math.floor(Math.random() * fileContentLines.length);
-      // extract the value
-      var randomLine = fileContentLines[randomLineIndex];
-      // add the random line in a div
-      document.getElementById('random-quote').innerHTML = randomLine;
-    };
-    request.open('GET', './science', true);
-    request.send();
-  </script>
   <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="js/jquery-2.1.1.min.js" async></script>
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js" async></script>
-  <script type="text/javascript" src="js/script.js" async></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
