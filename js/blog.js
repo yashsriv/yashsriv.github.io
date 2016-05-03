@@ -13,10 +13,12 @@ $(document).ready(function() {
       var subheading = line.split('#####')[1];
       var date = line.split('#####')[2];
       var body = line.split('#####')[3];
-      blog += "<h3> " + heading + " </h3> <br>";
-      blog += "<h4> " + subheading + " </h4> <br><hr>";
+      blog += '<div class="container">\n';
+      blog += '<hgroup style="text-align: center;"><h3> ' + heading + " </h3> <br>";
+      blog += "<h4> " + subheading + " </h4></hgroup> <br><hr>";
       blog += "<h5> " + date + " </h5><br>";
       blog += body.replace(/  \n/g, "<br>\n");
+      blog += '</div>';
       blog += "<br><br><hr>";
     }
     // add the random line in a div
