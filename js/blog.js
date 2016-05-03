@@ -17,7 +17,7 @@ $(document).ready(function() {
       blog += '<hgroup style="text-align: center;"><h3> ' + heading + " </h3> <br>";
       blog += "<h4> " + subheading + " </h4></hgroup> <br><hr>";
       blog += "<h5> " + date + " </h5><br>";
-      blog += body.replace(/  \n/g, "<br>\n");
+      blog += marked( body );
       blog += '</div>';
       blog += "<br><br><hr>";
     }
