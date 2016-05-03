@@ -12,7 +12,7 @@ through all of my updates and displays them here
 them. It currently just converts 2 trailing spaces into &ltbr>. In the future,
  I intend for it to parse Markdown.  
   
-  As for the documentation, I had already begun trying to learn scala when I
+  As for the documentation, I had already begun trying to learn scala as soon as I
 was informed of my project. I had just gone through basic scala syntax and
 differences from java from the book <em>Programming Scala, O'Reilly</em> when
 I met Adarsh today. After the meeting I took up Martin Odersky's course on
