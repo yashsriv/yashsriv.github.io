@@ -1,3 +1,23 @@
+Day 2: Scala and maths
+#####
+IITK New York Office Internship
+#####
+May 4th, 2016
+#####
+  So today I went on with Martin Odersky's course and just completed week 5.
+The  functional equivalent of operator overloading is awesome and I believe
+ it allows more verbose and consistent definition of classes which will behave as expected
+ if I plug in normal operators. The definition of functions is now more and more
+ tending towards how we define them in maths `f: [R, R] => R`.
+
+ I also read about the object oriented implementation of functions and I believe have understood
+ functional programming paradigm to a great degree. Scala's elegant combination of both fp and oop
+ allows us to implement programs in a better way. Scala's pattern matching is also good enough to allow
+ us to implement recursive algorithms in a better way.
+
+ I have also compiled a program highlighting the collections in scala which can be found
+ [here](https://gist.github.com/yashsriv/1ed9dad1b25ac606036de7c324bf61ea)
+##########
 Day 1: When I made my blog
 #####
 IITK New York Office Internship
@@ -7,7 +27,7 @@ May 3rd, 2016
   Well, I was told that I have to document my Internship via a blog
 so I chose to make my own blog manager based on a very simple idea.
 Currently, there is a ** my.blog ** file in a folder and a script iterates
-through all of my updates and displays them here
+through all of my updates and displays them here.
 
   My custom blog reader now converts them to suitable html and displays
 them. It currently just converts 2 trailing spaces into <br>.~~In the future,
