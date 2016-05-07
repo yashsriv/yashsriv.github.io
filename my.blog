@@ -1,3 +1,19 @@
+Day 4: Twitter and Scala
+#####
+IITK New York Office Internship
+#####
+May 6th, 2016
+#####
+  Today I gave up on the sentence anagram assignment... I managed all the functions except the last
+ one which actually solves the sentence anagrams. I got the algorithm but the `List[List[List[String]]]` were
+ getting out of hand, and I was wasting too much time on it so I left it as a good challenge for later on when I
+ have some time on my hands. :(
+
+  After that I started twitter's scala school which explains how they use scala in their framework.
+ I am having a little diifficulty understanding covariance and stuff but I will probably get a feel
+ for it once I program something using that. Currently I am reading about Finagle. Also I noticed that they haven't
+ mentioned scala Actors API which I see mentioned everywhere involving a concurrent framework.
+##########
 Day 3: Huffman Est Cool
 #####
 IITK New York Office Internship
