@@ -1,3 +1,17 @@
+Day 8: Movie Microservice
+#####
+IITK New York Internship
+#####
+May 10th, 2016
+#####
+  Today I finally had enough confidence with akka-http to try and understand the
+akka-http-microservice [example](https://github.com/theiterators/akka-http-microservice).
+I understood each and every line and why it was like it was and with that knowledge, I
+got working on a movie microservice which would return movie info from imdb id.
+
+  I finished it today, and the code can be found at [my repo](https://github.com/yashsriv/akka-movie-microservice).
+I intend to add another JSON query which takes movie name and returns movie info by tomorrow morning.
+##########
 Day 7:Http
 #####
 IITK New York Internship
@@ -79,7 +93,7 @@ Currently, there is a ** my.blog ** file in a folder and a script iterates
 through all of my updates and displays them here.
 
   My custom blog reader now converts them to suitable html and displays
-them. It currently just converts 2 trailing spaces into <br>.~~In the future,
+them. It currently just converts 2 trailing spaces into &lt;br>.~~In the future,
  I intend for it to parse markdown~~( Guess I was too impatient :P )
 
   As for the documentation, I had already begun trying to learn scala as soon as I
