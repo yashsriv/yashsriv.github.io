@@ -1,3 +1,13 @@
+Day 7:Http
+#####
+IITK New York Internship
+#####
+May 9th, 2016
+#####
+  Today I read about akka-streams and got started with akka-http.
+I read some akka-streams and then went on with akka-http. By the end of
+the day, I was able to make a http server to respond to get requests.
+##########
 Day 5 and 6: Akka
 #####
 IITK New York Internship
