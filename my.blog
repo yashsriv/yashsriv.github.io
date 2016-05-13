@@ -1,3 +1,16 @@
+Day 10: Free Monads
+#####
+IITK New York Internship
+#####
+May 12th, 2016
+#####
+  Yesterday, I went about understanding slick and nearly understood it very well. I tried
+creating a database to work with my movie microservice so that once fetched data is cached.
+I was not able to implement that due to confusions with future.
+  I spent today understanding slick and then trying to understand Ixchel's implementation
+of slick using free monads. I was unable to understand a very simple sample, so now I am
+going about learning scalaz completely from the basics.
+##########
 Day 8: Movie Microservice
 #####
 IITK New York Internship
