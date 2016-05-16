@@ -1,3 +1,24 @@
+Day 13: Running ixchel
+#####
+IITK New York Internship
+#####
+May 15th, 2016
+#####
+  If I were superstitious, I wouldn't have done anything today, but unfortunately
+I'm not, so I actually did a lot today.So much that I had to create a gist as
+an extension of this post.
+
+  Today I decided to run ixchel on my laptop so that I could see the effects
+of making small changes. The process to install it was itself time
+consuming and I spent the better half of the day trying to get it to
+run.
+
+  I manipulated the dbs manually, saw the effect of creating a user on the
+tables. That's all I was able to do today but I intend to try out more commands
+tommorrow and get to working actually. Considering that I have really started
+appreciating the blog style of documentation, I documented today's efforts in
+a secret gist which can be found [here](https://gist.github.com/yashsriv/cc1026920046dfab8594d995be8ad937)
+##########
 Day 12: Scalaz
 #####
 IITK New York Internship
@@ -19,6 +40,7 @@ May 12th, 2016
   Yesterday, I went about understanding slick and nearly understood it very well. I tried
 creating a database to work with my movie microservice so that once fetched data is cached.
 I was not able to implement that due to confusions with future.
+
   I spent today understanding slick and then trying to understand Ixchel's implementation
 of slick using free monads. I was unable to understand a very simple sample, so now I am
 going about learning scalaz completely from the basics.
