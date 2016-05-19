@@ -1,3 +1,17 @@
+Day 16: Notifications
+#####
+IITK New York Internship
+#####
+May 18th, 2016
+#####
+  For the past few days, I have been experimenting with ixchel and have been trying
+to implement shivanshu's notification system which he had tried last year. Considering
+that some of the technologies used have changed in a year, I had to spend considerable time
+trying to find out about them and getting it to work.
+
+  My current WIP can be found [here](https://github.com/yashsriv/ixchel/compare/WIP/notifications)
+I am still trying out things and will hopefully complete this by the end of this week.
+##########
 Day 13: Running ixchel
 #####
 IITK New York Internship
@@ -5,7 +19,7 @@ IITK New York Internship
 May 15th, 2016
 #####
   If I were superstitious, I wouldn't have done anything today, but unfortunately
-I'm not, so I actually did a lot today.So much that I had to create a gist as
+I'm not, so I actually did a lot today. So much that I had to create a gist as
 an extension of this post.
 
   Today I decided to run ixchel on my laptop so that I could see the effects
