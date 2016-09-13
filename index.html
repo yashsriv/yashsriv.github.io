@@ -2,142 +2,178 @@
 <html lang="en">
 
 <head>
-  <!--Set title-->
-  <title>Yash Srivastav</title>
   <!--Set charset-->
   <meta charset="utf-8">
-  <!--set favicon-->
-  <link rel="shortcut icon" href="favicon.ico">
-  <!--set meta properties-->
-  <meta name="description" content="Homepage of Yash Srivastav" />
-  <meta name="keywords" content="yash, srivastav, robocon, iit, iit kanpur, iitk, kolkata, yash srivastav, cse, computer science" />
-  <meta name="author" content="Yash Srivastav" />
 
-  <!--Import Google Icon Font-->
-  <!--<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-  <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+  <!--Set title-->
+  <title>A Random Guy's Page</title>
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--Set favicon-->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!--Set meta properties-->
+  <meta name="description" content="Homepage of Yash Srivastav" />
+  <meta name="keywords" content="yash, srivastav, robocon, iit, iit kanpur, iitk, kolkata, yash srivastav, cse, computer science" />
+  <meta name="author" content="Yash Srivastav" />
+  <meta name="theme-color" content="#C6FF00">
+
+  <!--Set backwards compatibility-->
+  <link rel="stylesheet" href="css/reset.css">
+  <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--Live editing-->
+  <!--<script src="https://livejs.com/live.js"></script>-->
+
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+  <link rel="stylesheet" type="text/css" href="css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+
 </head>
 
-<body>
-  <!--Introduction-->
-  <div class="intro blue-grey lighten-2 z-depth-1">
-    <h1 class="grey-text text-lighten-5">Yash Srivastav <i class="mdi-action-home"></i></h1>
-    <h5 class="grey lighten-4 grey-text text-darken-1">CSE Freshman, IIT Kanpur</h5>
-  </div>
-  <!--Random Quote with link to ESC101-->
-  <div class="container phrase">
-    <div class="row">
-      <div class="col s12 m6 l6 offset-m3 offset-l3">
-        <!--<h5> A Random Quote </h5>-->
-        <div class="card blue-grey lighten-4 z-depth-1">
-          <div class="card-content black-text" id="random-quote">
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m2 l2 offset-m1 offset-l1">
-        <h6> You might be here for: </h6>
-        <a class="waves-effect waves-dark blue-grey lighten-4 z-depth-1 grey-text text-darken-1 btn" href="http://home.iitk.ac.in/~yashsriv/ESC101">ESC101</a>
-      </div>
-    </div>
-  </div>
-  <!--About-->
-  <!--<div class="blue-grey lighten-2 z-depth-1">-->
-  <hr class="stylishhr">
-  <div class="container about">
-    <h5>About Me</h5>
-    <h6>Let me introduce myself</h6>
-    <hr>
-    <!--A Single Row-->
-    <div class="row">
-      <!--One Column contains Story-->
-      <div class="col s12 m4 l4">
-        <!--In a card-->
-        <h6 class="black-text">Story</h6>
-        <!--Heading is in black, rest white-->
-        <div class="card blue-grey lighten-4 z-depth-1">
-          <div class="card-content black-text">
-            <p> I love to code, enjoy life and meet new people.</p>
-            <p> I am a first year(Y15) undergraduate in the department of Computer Science and Engineering at Indian Institue of Technology, Kanpur.</p>
-          </div>
-        </div>
-      </div>
-      <!--One contains Profile-->
-      <div class="col s12 m4 l4">
-        <!--In a card-->
-        <h6 class="black-text">Profile</h6>
-        <!--Heading is in black, rest white-->
-        <div class="card blue-grey lighten-4 z-depth-1">
-          <div class="card-content">
-            <img src="images/profile.png" class="circle responsive-img" width="80" height="80">
-            <br>
-            <a href="resume.pdf" class="black-text">RESUME</a>
-          </div>
-          <!--<div class="card-action">-->
-          <!--<a href="./ESC101">ESC101</a>-->
-          <!--</div>-->
-        </div>
-      </div>
-      <!--One contains current jobs-->
-      <div class="col s12 m4 l4">
-        <!--Heading is in black, rest white-->
-        <h6 class="black-text">Jobs</h6>
-        <ul class="collapsible z-depth-1">
-          <li class="active">
-            <div class="collapsible-header blue-grey lighten-4">Student</div>
-            <div class="collapsible-body">
-              <p>Student at IIT Kanpur</p>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header blue-grey lighten-4">Coder</div>
-            <div class="collapsible-body">
-              <p>Image Processing, Robocon IIT Kanpur</p>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header blue-grey lighten-4">Web Developer</div>
-            <div class="collapsible-body">
-              <p>I try very hard to maintain this site</p>
-            </div>
-          </li>
+<body class="black">
+  <header class="navbar-fixed" id="header">
+    <nav>
+      <div class="nav-wrapper grey darken-4">
+        <a href="#intro" class="brand-logo white-text"> &nbsp;&nbsp;&nbsp;&nbsp;Yash Srivastav <i class="fa fa-home" aria-hidden="true"></i></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars"></i></a>
+        <ul class="right hide-on-med-and-down">
+          <li id="quote_li"><a href="#quote" class="lime-text text-accent-3">Quote</a></li>
+          <li id="about_li"><a href="#about" class="lime-text text-accent-3">About</a></li>
+          <li id="contact_li"><a href="#contact" class="lime-text text-accent-3">Contact</a></li>
+          <li id="resume_li"><a href="./files/resume.pdf" class="lime accent-4 black-text" target="_blank">Resume</a></li>
+          <li id="esc101_li"><a href="https://yashsriv.github.io/esc101/" class="lime-text text-accent-2" target="_blank">ESC101A</a></li>
+        </ul>
+        <ul class="side-nav grey darken-4" id="mobile-demo">
+          <li id="quote_li"><a href="#quote" class="lime-text text-accent-3">Quote</a></li>
+          <li id="about_li"><a href="#about" class="lime-text text-accent-3">About</a></li>
+          <li id="contact_li"><a href="#contact" class="lime-text text-accent-3">Contact</a></li>
+          <li id="resume_li"><a href="./files/resume.pdf" class="lime accent-4 black-text" target="_blank">Resume</a></li>
+          <li id="esc101_li"><a href="https://yashsriv.github.io/esc101/" class="lime-text text-accent-2" target="_blank">ESC101A</a></li>
         </ul>
       </div>
-    </div>
-  </div>
-  <hr class="stylishhr">
-  <!--</div>-->
-  <!--Contact-->
-  <div class="container contact">
-    <h5>Contact</h5>
-    <h6>Get in touch with me</h6>
-    <hr>
-    <div class="row">
-      <div class="col s12 m12 l12">
-        <h6 class="mdi-action-home">Address: </h6> C-347, Hall 10, IIT Kanpur, India<br>
-        <h6 class="mdi-hardware-phone-android">Phone: </h6> +91 7054133662<br>
-        <h6 class="mdi-communication-email">Email: </h6> yashsriv@iitk.ac.in
-        <br>
-        <h6 class="mdi-action-open-in-browser">Website: </h6> http://home.iitk.ac.in/~yashsriv/
-        <br>
+    </nav>
+  </header>
+  <section class="scrollspy z-depth-3 lime-text text-accent-3" id="intro">
+    <hgroup>
+    <h1 class="black">Yash Srivastav<i class="fa fa-home" aria-hidden="true"></i></h1>
+      <br>
+      <h5 class="black-text lime accent-4"> CSE Freshman, IIT Kanpur</h5>
+    </hgroup>
+  </section>
+  <section class="quote white-text section scrollspy" id="quote">
+    <div class="container">
+      <hgroup>
+        <h5>Random Quote</h5>
+        <h6>Don't blame me!! Its random</h6>
+        <hr>
+      </hgroup>
+      <div class="row">
+        <div class="col s12 m6 l6 offset-m3 offset-l3">
+          <blockquote id="random" class="white-text">
+          </blockquote>
+        </div>
+        <div class="col s12 m3 l3">
+          <p> You might be here for : </p>
+          <br>
+          <a class="waves btn lime-text text-accent-4 grey darken-4" href="https://yashsriv.github.io/esc101" target="_blank">ESC101A</a>
+        </div>
       </div>
     </div>
-  </div>
-  <hr class="stylishhr">
+  </section>
+  <hr class="stylish">
+  <section class="about container white-text section scrollspy" id="about">
+    <div class="container">
+      <hgroup>
+        <h5>About Me</h5>
+        <h6> Hello World!! </h6>
+        <hr>
+      </hgroup>
+      <div class="row valign-wrapper">
+        <div class="col s12 m4 l4 center-align offset-m4 offset-l4">
+          <img class="circle responsive-img" src="images/profile.png">
+        </div>
+      </div>
+
+      <article class="row valign-wrapper">
+        <div class="col s12 m12 l12 offset-s0 offset-m0 offset-l0">
+          <div class="card grey darken-4 z-depth-1">
+            <div class="card-content white-text" id="card-about">
+              <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;Hey there, I am Yash. I am <del>not</del> a geek who is interested in anything related to computers or science fiction.
+              </p>
+              <br>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;After years of slogging and hardwork, I finally managed to gain admission to the Indian Institute of Technology, Kanpur as an Undergratuate in the Computer Science and Engineering Department.
+              </p>
+              <br>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;I tend to waste my time reading books, watching movies, playing games, hanging out with friends and enjoying life in general.
+              </p>
+              <br>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;My resume can be found <a href="./files/resume.pdf" class="lime-text text-accent-4">here</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <hr class="stylish">
+  <section class="contact container white-text section scrollspy" id="contact">
+    <div class="container">
+      <hgroup>
+        <h5>Contact Me</h5>
+        <h6>If you need to</h6>
+        <hr>
+      </hgroup>
+      <div class="row">
+        <div class="col s12 m8 l8 offset-m2 offset-l2 valign-wrapper">
+          <h6> <i class="fa fa-map-marker" aria-hidden="true"></i> </h6> &nbsp;&nbsp;A-136, Hall 10, IIT Kanpur, India
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m8 l8 offset-m2 offset-l2 valign-wrapper">
+          <h6><i class="fa fa-phone" aria-hidden="true"></i> </h6> &nbsp;&nbsp;<strong>Confidential</strong> &nbsp;-&nbsp; <em>but my friends have it</em>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m8 l8 offset-m2 offset-l2 valign-wrapper">
+          <h6><i class="fa fa-envelope" aria-hidden="true"></i> </h6> &nbsp;&nbsp;<a href="mailto:yashsriv@iitk.ac.in" class="lime-text">IITK</a> &nbsp;or&nbsp; <a href="mailto:yash111998@gmail.com" class="lime-text">Gmail</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m8 l8 offset-m2 offset-l2 valign-wrapper">
+          <h6><i class="fa fa-home" aria-hidden="true"></i> </h6> &nbsp;&nbsp;You are at it, but still : &nbsp;<a href="http://home.iitk.ac.in/~yashsriv" class="lime-text">IITK</a> &nbsp;or&nbsp; <a href="http://yashsriv.github.io" class="lime-text">Github</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m8 l8 offset-m2 offset-l2 valign-wrapper valign-wrapper">
+          <h6><i class="fa fa-github" aria-hidden="true"></i> </h6> &nbsp;&nbsp;<a href="http://github.com/yashsriv" class="lime-text">yashsriv</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m8 l8 offset-m2 offset-l2 valign-wrapper valign-wrapper">
+          <h6><i class="fa fa-facebook-official" aria-hidden="true"></i> </h6> &nbsp;&nbsp;<a href="http://www.facebok.com/yash98" class="lime-text">yash98</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="stylish">
   <footer>
     <div class="footer-copyright">
-      <div class="container" style="text-align: center;">
+      <div class="container white-text" style="text-align: center;">
         © Copyright 2016 | All Rights Reserved | Designed and Developed by <b> Yash Srivastav </b>
       </div>
     </div>
   </footer>
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js" async></script>
+  <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 
