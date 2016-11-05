@@ -16,7 +16,7 @@ body {
   margin-bottom: 25px;
   padding-top: 18%;
   padding-bottom: 18%;
-  height: 100%;
+  height: 100vmin;
   text-align: center;
 }
 
@@ -101,12 +101,15 @@ section {
   -o-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
   background: rgba(0, 0, 0, 0);
-  display: None;
   opacity: 0;
   transition: all 1s ease-out;
 }
 
 .navbar-fixed.scrolled {
-  display: inline;
   opacity: 1;
+}
+
+#header {
+  position: fixed;
+  top: 0;
 }
