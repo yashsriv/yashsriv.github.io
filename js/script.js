@@ -1,7 +1,22 @@
+function setupStarField() {
+  var section = document.getElementById("intro-controller");
+  var cs = getComputedStyle(section);
+  var c = document.getElementById("starfield");
+  c.width = parseInt(cs.getPropertyValue('width'), 10);
+  c.height = parseInt(cs.getPropertyValue('height'), 10);
+  var ctx = c.getContext("2d");
+  ctx.imageSmoothingEnabled = true;
+  var board = new Board(100, new Vector(c.width, c.height));
+  board.draw(ctx);
+  setInterval(function() {
+    board.loop(ctx);
+  }, 30);
+}
+
 $(document).ready(function() {
-  //$('.collapsible').collapsible();
-  //$(header).hide()
   console.log("Document Ready");
+
+  // Load Quote
   $.ajax({
       // The URL for the request
       url: "./files/science",
@@ -21,7 +36,7 @@ $(document).ready(function() {
       var randomLineIndex = Math.floor(Math.random() * fileContentLines.length);
       // extract the value
       var randomLine = fileContentLines[randomLineIndex];
-      while (randomLine.match(/.{3,}/) == null) {
+      while (randomLine.match(/.{3,}/) === null) {
         // get a random index (line number)
         randomLineIndex = Math.floor(Math.random() * fileContentLines.length);
         // extract the value
@@ -37,16 +52,21 @@ $(document).ready(function() {
     })
     // Code to run regardless of success or failure;
     .always(function(xhr, status) {});
-  $('.scrollspy').scrollSpy();
+
+  // Setup hidden navbar
   $(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-      $('.navbar-fixed').addClass("scrolled")
-      //$(header).fadeIn(1000);
-    } else if ($(window).scrollTop() < 300) {
-      $('.navbar-fixed').removeClass("scrolled")
-      //$(header).fadeOut(50);
+    var h = window.innerHeight;
+    if ($(window).scrollTop() > h / 3.6) {
+      $('.navbar-fixed').addClass("scrolled");
+    } else if ($(window).scrollTop() < h / 3.6) {
+      $('.navbar-fixed').removeClass("scrolled");
     }
   });
+
+  //setupStarField();
+
+  // Setup Materialize
+  $('.scrollspy').scrollSpy();
   $('.parallax').parallax();
   $(".button-collapse").sideNav();
 });
