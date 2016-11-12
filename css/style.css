@@ -1,52 +1,127 @@
-@import 'https://fonts.googleapis.com/css?family=Prompt';
+/* I have used classes instead of ids throughout this document because csslint complains for ids */
 
+/*****************/
+/* Font Settings */
+/*****************/
 body {
-  background: #000000;
-  font-family: "Prompt", sans-serif;
+  font-family: 'Arima Madurai', cursive;
+  font-weight: 500;
 }
 
-#intro-controller {
+blockquote {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+
+.intro {
+  font-family: 'Fredoka One', cursive;
+}
+
+.intro .main {
+  font-size: 6vmin;
+}
+
+.intro .sub {
+  font-size: 2vmin;
+}
+
+.about .card-content {
+  font-family: 'Pompiere', cursive;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+.contact {
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+/***************/
+/* Backgrounds */
+/***************/
+body {
+  background: #000000;
+}
+
+.intro {
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/IRGeek.jpg');
+  background-position: center center, center center;
+  background-repeat: repeat, no-repeat;
+  background-size: contain;
+}
+
+nav ul a {
+    color: #C6FF00;
+}
+
+nav ul a:hover {
+    background-color: rgb(155, 155, 155);
+    background-color: rgba(155, 155, 155, 0.5);
+}
+
+a.active {
+  color: rgb(255, 255, 255);
+}
+
+.side-nav a {
+    color: #C6FF00;
+}
+
+.side-nav a.active {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-fixed {
+  background-color: rgb(0, 0, 0);
+}
+
+.about img {
+  width: 100%;
+}
+
+/***********************/
+/* Positioning and Size*/
+/***********************/
+section.intro {
   height: 100vmin;
 }
 
-#intro {
-  background-attachment: fixed;
-  background-size: cover;
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.55)
-    ),no-repeat center fixed url('../images/IRGeek.jpg');
-  margin-bottom: 25px;
-  padding-top: 18vmin;
-  height: 100%;
+.intro {
+  padding-top: 41.5vmin;
   text-align: center;
 }
 
-#intro h1 {
+.intro .main {
   display: inline-block;
-  font-weight: 900;
+  margin: 3vmin;
   text-transform: uppercase;
 }
 
-#intro h5 {
+.intro .sub {
   display: inline-block;
-  font-size: 1.2rem;
-  padding: 10px;
-  margin-bottom: 10vh;
+  margin: 0;
+  padding: 1.5vmin;
   text-transform: uppercase;
 }
 
-hgroup {
-  text-align: center;
-}
-
-hgroup h5 {
+.main {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
-hgroup h6 {
+.sub {
   margin-bottom: 20px;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+}
+
+hgroup {
+  text-align: center;
 }
 
 hgroup hr {
@@ -58,12 +133,7 @@ blockquote {
   border-left: 5px solid #c6ff00;
 }
 
-div#card-about {
-  font-size: medium;
-  font-weight: 300;
-  line-height: 1.2em;
-}
-
+/* Stylish hr */
 hr.stylish {
   border: none;
   border-bottom: medium double #ffffff;
@@ -83,24 +153,13 @@ hr.stylish:after {
   position: relative;
   top: -0.55em;
 }
+/*End Stylish hr*/
 
-nav ul a.active {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-li#resume_li {
-  /*background-color: #c6ff00;*/
-}
-
-section {
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-
+/* Special Disappearing Navbar */
 .navbar-fixed {
-  background-color: rgb(0, 0, 0);
   opacity: 0;
+  position: fixed;
+  top: 0;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
@@ -108,16 +167,94 @@ section {
   transition: all 1s ease-out;
 }
 
-.navbar-fixed.scrolled {
+.scrolled {
   opacity: 1;
 }
 
-#header {
-  position: fixed;
-  top: 0;
+/* Copied from Hover.css and modified as required */
+/* Icon Spin */
+.spin {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: transform;
+  -moz-transition-property: transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
-
-#starfield {
+.hover-spin:hover .spin {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+/* Shutter In Vertical */
+.hvr-shutter-in-vertical {
+  background: #000000;
+  box-shadow: 0 0 1px transparent;
+  color: #000000;
+  display: inline-block;
+  position: relative;
+  -webkit-transform: perspective(1px) translateZ(0);
+  -moz-transform: perspective(1px) translateZ(0);
+  -ms-transform: perspective(1px) translateZ(0);
+  -o-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  vertical-align: middle;
+}
+.hvr-shutter-in-vertical:before {
+  background: #aeea00;
+  bottom: 0;
+  content: "";
+  left: 0;
   position: absolute;
-  z-index: 47;
+  right: 0;
+  top: 0;
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transform-origin: 50%;
+  -moz-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  -o-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -moz-transition-property: transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  z-index: -1;
+}
+.hvr-shutter-in-vertical:hover, .hvr-shutter-in-vertical:focus, .hvr-shutter-in-vertical:active {
+  color: #aeea00;
+}
+.hvr-shutter-in-vertical:hover:before, .hvr-shutter-in-vertical:focus:before, .hvr-shutter-in-vertical:active:before {
+  -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -o-transform: scaleY(0);
+  transform: scaleY(0);
 }

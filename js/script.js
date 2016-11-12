@@ -1,37 +1,20 @@
-function setupStarField() {
-  var section = document.getElementById("intro-controller");
-  var cs = getComputedStyle(section);
-  var c = document.getElementById("starfield");
-  c.width = parseInt(cs.getPropertyValue('width'), 10);
-  c.height = parseInt(cs.getPropertyValue('height'), 10);
-  var ctx = c.getContext("2d");
-  ctx.imageSmoothingEnabled = true;
-  var board = new Board(100, new Vector(c.width, c.height));
-  board.draw(ctx);
-  setInterval(function() {
-    board.loop(ctx);
-  }, 30);
-}
+var currentdp = 0;
 
-$(document).ready(function() {
-  console.log("Document Ready");
-
+function setupQuote() {
   // Load Quote
   $.ajax({
       // The URL for the request
-      url: "./files/science",
+      url: "./files/science.json",
       // Whether this is a POST or GET request
       type: "GET",
       // The type of data we expect back
-      dataType: "text",
+      dataType: "json",
     })
     // Code to run if the request succeeds (is done);
     // The response is passed to the function
-    .done(function(text) {
-      // get the file contents
-      var fileContent = text;
+    .done(function(data) {
       // split into lines
-      var fileContentLines = fileContent.split('%');
+      var fileContentLines = data;
       // get a random index (line number)
       var randomLineIndex = Math.floor(Math.random() * fileContentLines.length);
       // extract the value
@@ -43,7 +26,7 @@ $(document).ready(function() {
         randomLine = fileContentLines[randomLineIndex];
       }
       // add the random line in a div
-      $("#random").html(randomLine);
+      $("#random").html(jQuery.parseHTML(randomLine));
     })
     // Code to run if the request fails; the raw request and
     // status codes are passed to the function
@@ -52,6 +35,10 @@ $(document).ready(function() {
     })
     // Code to run regardless of success or failure;
     .always(function(xhr, status) {});
+
+}
+
+function navbar() {
 
   // Setup hidden navbar
   $(window).scroll(function() {
@@ -63,7 +50,22 @@ $(document).ready(function() {
     }
   });
 
-  //setupStarField();
+}
+
+function toggleDP() {
+  var src = ($("#dp").attr('src') === 'images/profile.png') ?
+    'images/dp.svg' : 'images/profile.png';
+  $("#dp").attr('src', src);
+}
+
+$(document).ready(function() {
+
+  setupQuote();
+  navbar();
+
+  if(window.innerWidth < 600) {
+    $('.tooltipped').tooltip('remove');
+  }
 
   // Setup Materialize
   $('.scrollspy').scrollSpy();
