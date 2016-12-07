@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Day 3: Huffman Est Cool"
+date: 2016-05-05 15:38:27 +0530
+categories:
+  - nyc
+---
+Today I nearly finished the course and decided to try the assignments. Major part
+ of my day was spent trying out the assignments. The Huffman encoding and decoding
+assignment was good and by the end of the day I nearly finished the Sentence Anagram one.

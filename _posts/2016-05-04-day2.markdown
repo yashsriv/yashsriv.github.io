@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Day 2: Scala and Math"
+date: 2016-05-04 15:38:27 +0530
+categories:
+  - nyc
+---
+  So today I went on with Martin Odersky's course and just completed week 5.
+The  functional equivalent of operator overloading is awesome and I believe
+it allows more verbose and consistent definition of classes which will behave as expected
+if I plug in normal operators. The definition of functions is now more and more
+tending towards how we define them in maths : `f: [R, R] => R`.
+
+ I also read about the object oriented implementation of functions and I believe have understood
+functional programming paradigm to a great degree. Scala's elegant combination of both fp and oop
+allows us to implement programs in a better way. Scala's pattern matching is also good enough to allow
+us to implement recursive algorithms in a better way.
+
+I have also compiled a program highlighting the collections in scala:
+
+{% gist yashsriv/1ed9dad1b25ac606036de7c324bf61ea collections.scala %}
