@@ -8,7 +8,7 @@ function setupQuote() {
       // Whether this is a POST or GET request
       type: "GET",
       // The type of data we expect back
-      dataType: "json",
+      dataType: "json"
     })
     // Code to run if the request succeeds (is done);
     // The response is passed to the function
@@ -63,7 +63,7 @@ $(document).ready(function() {
   setupQuote();
   navbar();
 
-  if(window.innerWidth < 600) {
+  if (window.innerWidth < 600) {
     $('.tooltipped').tooltip('remove');
   }
 

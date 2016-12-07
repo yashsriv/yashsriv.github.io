@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Day 1: When I made my blog"
+date: 2016-05-03 15:38:27 +0530
+categories:
+  - nyc
+---
+Well, I was told that I have to document my Internship via a blog
+so I chose to make my own blog manager based on a very simple idea.
+Currently, there is a **my.blog** file in a folder and a script iterates
+through all of my updates and displays them here.
+
+(Update: Now I have shifted to jekyll a full markdown based blog with other
+features)
+
+  My custom blog reader now converts them to suitable html and displays
+them. It currently just converts 2 trailing spaces into &lt;br>.~~In the future,
+ I intend for it to parse markdown~~( Guess I was too impatient :P )
+
+  As for the documentation, I had already begun trying to learn scala as soon as
+I was informed of my project. I had just gone through basic scala syntax and
+differences from java from the book `Programming Scala, O'Reilly` when
+I met Adarsh(@adarshaj) today. After the meeting I took up Martin Odersky's course on
+ Coursera. After completing week one and learning about functional programming
+ (something very new to me), I wrote my blog parser. Functional Programming is
+ powerful and it reminds me of the time when I used to solve, relatively difficult
+ problems in C, in Python using a single line of function calls except now I just
+have to define the functions too.

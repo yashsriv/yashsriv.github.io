@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% include head.html %}
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Proza+Libre|Source+Code+Pro" rel="stylesheet">
+  <link href="/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection" />
+  <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen,projection" />
+  <link href="/css/generic_style.css" rel="stylesheet" type="text/css" media="screen,projection" />
+  <link href="/css/syntax.css" rel="stylesheet" type="text/css" media="screen,projection" />
+</head>
+
+<body>
+
+  {% include header.html %}
+  <div class="container">
+    <div class="card-panel">
+      {{ content }}
+    </div>
+    <div class="row">
+      <div class="col s6">
+        <div class="card-panel" style="text-align: center;">
+          <div class="row">
+            <div class="col s12 m1">
+              {% if page.next.url %}
+              <i class="fa fa-chevron-left"></i>
+              {% else %}
+              <i class="fa fa-anchor"></i>
+              {% endif %}
+            </div>
+            <div class="col m11 hide-on-small-only">
+              {% if page.next.url %}
+              <a href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.title }}</a>
+              {% else %}
+              This is the latest post
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="card-panel" style="text-align: center;">
+          <div class="row">
+            <div class="col m11 hide-on-small-only">
+              {% if page.previous.url %}
+              <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}</a>
+              {% else %}
+              This is the oldest post
+              {% endif %}
+            </div>
+            <div class="col s12 m1">
+              {% if page.previous.url %}
+              <i class="fa fa-chevron-right"></i>
+              {% else %}
+              <i class="fa fa-anchor"></i>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-panel">
+    <div id="disqus_thread"></div>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"> comments powered by Disqus.</a>
+    </noscript>
+    </div>
+  </div>
+  <!-- {% include footer.html %} -->
+
+  <script>
+    var disqus_developer = 1;
+    var disqus_config = function () {
+      this.page.url = "{{ page.url | prepend: site.baseurl | prepend: site.url }}";
+      this.page.identifier = "{{ page.id }}";
+    };
+   (function() { // DON'T EDIT BELOW THIS LINE
+     var d = document, s = d.createElement('script');
+     s.src = '//yashsriv.disqus.com/embed.js';
+     s.setAttribute('data-timestamp', +new Date());
+     (d.head || d.body).appendChild(s);
+   })();
+  </script>
+  <script type="text/javascript" src="/js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="/js/materialize.min.js"></script>
+  <script type="text/javascript" src="/js/generic_script.js"></script>
+</body>
+
+</html>

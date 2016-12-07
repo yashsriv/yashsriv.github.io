@@ -1,0 +1,76 @@
+.author {
+  font-family: Georgia, serif;
+  margin-right: 10px;
+}
+
+.container {
+  margin-top: 10vmin;
+}
+
+.post {
+  margin-top: 4vmin;
+}
+
+.post-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  margin: 0 auto 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .post-title {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .word-count {
+    float: right;
+  }
+}
+
+.word-count {
+  font-family: Georgia, serif;
+}
+
+time {
+  font-family: Georgia, serif;
+}
+
+.post-meta {
+  font-size: 1rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.post-content {
+  font-family: 'Proza Libre', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-top: 1vmin;
+}
+
+.post-content p {
+  margin: 0 auto 28px;
+}
+
+hr {
+  margin: 14px auto 28px;
+  opacity: 0;
+}
+
+code {
+  background-color: #EEEEEE;
+  font-family: 'Source Code Pro', monospace;
+  margin: 0 4px 0;
+  padding: 2px;
+}
+
+.card-panel .row {
+  margin-bottom: 0;
+}
+
+body {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%239C92AC' fill-opacity='0.08'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}

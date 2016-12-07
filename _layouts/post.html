@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <div class="post-title" itemprop="name headline">
+        {{ page.title }}
+    </div>
+    <br class="hide-on-med-and-up">
+    <p class="post-meta">
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person" class="author">
+        <span itemprop="name">
+          Yash Srivastav
+        </span>
+      </span>
+      <br class="hide-on-med-and-up">
+      <br class="hide-on-med-and-up">
+      <i class="fa fa-calendar" aria-hidden="true"></i>
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date_to_long_string }}
+      </time>
+      <br class="hide-on-med-and-up">
+      <br class="hide-on-med-and-up">
+      <span class="word-count">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        {{ page.content | reading_time | pluralize: "minute" }} read,
+        <span itemprop="wordCount">
+          {{ page.content | count_words | pluralize: "word" }}
+        </span>
+      </span>
+    </p>
+  </header>
+  <hr>
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+</article>

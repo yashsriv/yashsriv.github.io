@@ -1,0 +1,76 @@
+---
+title: Yash Srivastav's blog
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include head.html %}
+  <meta name="description" content="Listing of blog content" />
+  <meta property="og:description" content="Listing of blog content">
+  <meta name="twitter:description" content="Listing of blog content">
+  <meta itemprop="description" content="Listing of blog content">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Cormorant+Garamond|Proza+Libre|Libre+Franklin:900|Source+Code+Pro" rel="stylesheet">
+  <link href="/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen,projection" />
+  <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen,projection" />
+  <link href="/css/blog_style.css" rel="stylesheet" type="text/css" media="screen,projection" />
+</head>
+
+<body>
+  <header id="header">
+    <nav class="navbar-fixed">
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo"> &nbsp;&nbsp;&nbsp;&nbsp;Yash Srivastav <i class="fa fa-home" aria-hidden="true"></i></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse">&nbsp;&nbsp;<i class="fa fa-bars" style="font-size: 2em"></i></a>
+        <ul class="right hide-on-med-and-down">
+          <li id="resume_li"><a href="https://github.com/yashsriv/resume/blob/master/resume.pdf" class="" target="_blank">Resume</a></li>
+          <li id="esc101_li"><a href="http://home.iitk.ac.in/~yashsriv/ESC101/" class="" target="_blank">ESC101A</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li id="resume_li"><a href="https://github.com/yashsriv/resume/blob/master/resume.pdf" class="" target="_blank">Resume</a></li>
+          <li id="esc101_li"><a href="http://home.iitk.ac.in/~yashsriv/ESC101/" class="" target="_blank">ESC101A</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="banner z-depth-2" id="banner">
+    <hgroup>
+      <div class="main"> My Blog </div>
+      <br>
+      <div class="sub"> Documentation of my experiments with internships, programming and life </div>
+    </hgroup>
+  </section>
+  <main>
+    <section class="container" id="posts">
+      <div class="row">
+        {% for post in site.posts %}
+        <article class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <center>
+              <span class="card-title">
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </span>
+              </center>
+              <p>
+                <i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_long_string }} <span class="right"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.content | reading_time | pluralize: "minute" }} read</span>
+              </p>
+              <br>
+              {% assign excerpt = post.excerpt | truncatewords: 40 %}
+              <p>{{ excerpt }} {% if excerpt != post.content %} <a href="{{ post.url | prepend: site.baseurl }}"> read more » {% endif %}</p>
+            </div>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+  </main>
+  <hr class="stylish">
+  <!-- {% include footer.html %} -->
+  <script type="text/javascript" src="/js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.matchHeight.js"></script>
+  <script type="text/javascript" src="/js/materialize.min.js"></script>
+  <script type="text/javascript" src="/js/blog_script.js"></script>
+</body>
+
+</html>
