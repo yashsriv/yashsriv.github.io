@@ -86,3 +86,15 @@ body {
   top: 1vmin;
   width: 8vmin;
 }
+
+ul li {
+  list-style-type: square;
+}
+
+ul {
+  padding-left: 40px;
+}
+
+nav ul li {
+  list-style-type: none;
+}

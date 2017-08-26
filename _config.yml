@@ -44,7 +44,7 @@ unpublished: false
 
 # Plugins
 whitelist: []
-gems:
+plugins:
   - emoji_for_jekyll
   - liquid_pluralize
   - jekyll-last-modified-at

@@ -1,0 +1,120 @@
+---
+layout: post
+title: "My GSoC Project"
+date: 2017-08-26 06:00:00 +0530
+categories:
+  - gsoc
+---
+#### The Project
+
+I was involved in GSoC'17 with OpenPrinting under the Linux Foundation working on the
+project - Common Printing Dialog. The idea behind this project was to ensure that all
+dialogs on Linux behave similarly and show similar options.
+
+[https://summerofcode.withgoogle.com/projects/#6401547484266496](https://summerofcode.withgoogle.com/projects/#6401547484266496 "Project Description on GSoC Page")
+
+#### The Idea
+
+The basic idea was to have a server-client architecture where every method of printing,
+CUPS, Google Cloud Print, etc. behaved as servers and the dialogs behaved like clients.
+I'll use client, dialog and frontend interchangeably throughout this blog post.
+
+For achieving the communication, we used dbus which acts as a message bus between
+the servers and clients and offers us various features like broadcasting "signals"
+and also abstracting away server endpoints as simple function calls.
+
+So, as soon as a dialog starts it sends out a signal to every backend which registers
+the frontend and starts processing. They asynchronously emit each and every printer
+associated with them. The dialog listens to these events and updates its list of printers.
+
+Now, when a user tries to access options of a printer, the dialog queries the relevant
+backend and fetches the options. Also once the user presses the print button, the dialog
+sends the options chosen by the user to the backend.
+
+#### My Job
+
+The work was a group project among five students with:
+* 2 People working on the QT Dialog
+* 1 Person working on the CUPS Backend
+* 1 Person working on the Google Cloud Print Backend
+* I was working on integrating this in LibreOffice's print dialogs
+
+<br>
+LibreOffice is probably used for a lot of printing on Linux these days and thus, it had
+a full fledged printing dialog ready. Our QT Dialog was being made from scratch, so first
+of all people had to make the general UI and stuff and then start working on the
+functionality.
+
+So, I was involved in mostly trying to integrate the new backends with LO dialog with changes
+to just how the printers were obtained, etc. I worked closely with the backend teams, pointing
+out limitations or missing features required to get the LO dialog working just as it was before,
+with the new backends and helped in evolving the interfaces. The final dbus interfaces can be found
+here: [https://github.com/dracarys09/cpd-interface-files](https://github.com/dracarys09/cpd-interface-files "Interface Files")
+
+I managed to finally integrate changes in LO such that, if the new backends weren't installed on
+a Linux system, it would fall back to the previous implementation.
+
+##### Work Done
+
+My changes to LO code can be found here: [https://gerrit.libreoffice.org/#/c/40565](https://gerrit.libreoffice.org/#/c/40565)
+
+Other minor stuff I worked on:
+* [Initial sample server and client](https://github.com/yashsriv/common-print-dialog-bus)
+* [Bug Fixes to the CUPS Backend](https://github.com/NilanjanaLodh/PrintDialog_Backend/pulls?q=is%3Apr+author%3Ayashsriv+is%3Aclosed)
+* [Bug Fixes to the GCP Backend](https://github.com/dracarys09/gcp-backend/pulls?q=is%3Apr+is%3Aclosed+author%3Ayashsriv)
+
+<br>
+Basically, I wrote a `Manager`, which listened to all printer added/removed events
+and updated the printers shown accordingly. It also allowed querying a specific
+printer for advanced options like print quality, paper quality which aren't necessarily present
+in all printers. Finally, on pressing `Print`, the options and the print job were
+transmitted back to the dialog for printing.
+
+##### Interesting Issue Faced
+
+One of the main issues I faced was replacing the LO `PPDParser`. The new method doesn't
+rely on PPD files and instead sends all possible settable options as ipp attributes.
+LO had the system set up such that for any particular printer, it would parse the PPD
+file and then based on the PPD Keys and Values present, populate the UI.
+
+In this new system, I had to first of all try and ensure that the specific PPDKeys used
+across LO code such as `Duplex` (and its corresponding values
+`Simplex`, `DuplexNoTumble`, `DuplexTumble`) were converted from their corresponding
+ipp attribute `sides` (and corresponding values `one-sided`, `two-sided-long-edge`,
+`two-sided-short-edge`). This needed to be done for a 2-3 more keys and then
+the rest of the generic keys were easily handled using their ipp names.
+
+Another related issue was that LO required page sizes (in exact mm) for displaying the
+preview, but in our new system, only page names (like `a4`) were returned from the backend.
+To tackle this, first of all, we shifted to sending standard [PWG](https://www.pwg.org/) paper
+names from the backend and in the dialog, I used
+[CUPS utility functions](https://www.cups.org/doc/api-cups.html#pwgMediaForPWG) to get the exact
+paper sizes for the dialog to use.
+
+##### Targets Left
+
+Mostly the new dialog works and behaves like the older dialog without any big difference.
+The list of targets left for this are the following:
+* The current drop-down for the paper sizes uses the [PWG](https://www.pwg.org/) names which
+aren't very user-friendly. That could be mapped to user-friendly names.
+* The dialog on closing should emit a `Shutdown` signal so that the backends can go to sleep
+  if no frontend is active. I have been unable to get that to work on my own. With help from
+  the LO developers, this should be trivial.
+* I have to get this code merged to main LO codebase so that all future releases of LO can
+  use the newer backends (if available on a particular system).
+
+#### Acknowledgements
+
+  I am thankful to my mentors Danny, Till and Aveek for their guidance throughout the project.
+The interactions with them and working on this project was a great learning experience and
+I gained a lot of insight into how something which we take for granted, Printers, work on our
+systems. Special thanks to Caolán McNamara (LibreOffice contributor) who took out some of
+his time and helped me out with any doubts regarding LO codebase.
+
+  Also, thanks to Abhijeet, Anshul, Nilanjana and Rithvik for helping out whenever I was stuck
+or had a doubt. It was a great working with you guys. Cheers!
+
+#### Conclusion
+
+Overall, this year's GSoC was a great learning experience for me and I have a learned a lot from
+this project.
