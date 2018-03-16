@@ -70,7 +70,7 @@ printer for advanced options like print quality, paper quality which aren't nece
 in all printers. Finally, on pressing `Print`, the options and the print job were
 transmitted back to the dialog for printing.
 
-##### Interesting Issue Faced
+##### Interesting Issues Faced
 
 One of the main issues I faced was replacing the LO `PPDParser`. The new method doesn't
 rely on PPD files and instead sends all possible settable options as ipp attributes.
@@ -107,12 +107,12 @@ aren't very user-friendly. That could be mapped to user-friendly names.
 
   I am thankful to my mentors Danny, Till and Aveek for their guidance throughout the project.
 The interactions with them and working on this project was a great learning experience and
-I gained a lot of insight into how something which we take for granted, Printers, work on our
+I gained a lot of insight into how something which we take for granted, printers, work on our
 systems. Special thanks to Caolán McNamara (LibreOffice contributor) who took out some of
 his time and helped me out with any doubts regarding LO codebase.
 
   Also, thanks to Abhijeet, Anshul, Nilanjana and Rithvik for helping out whenever I was stuck
-or had a doubt. It was a great working with you guys. Cheers!
+or had a doubt. It was great working with you guys. Cheers!
 
 #### Conclusion
 
