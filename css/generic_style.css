@@ -61,7 +61,7 @@ hr {
   opacity: 0;
 }
 
-code {
+pre, code {
   background-color: #EEEEEE;
   font-family: 'Source Code Pro', monospace;
   margin: 0 4px 0;
