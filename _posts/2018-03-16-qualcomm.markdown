@@ -1,0 +1,149 @@
+---
+layout: post
+title: "Qualcomm Centriq™ 2400"
+date: 2018-03-16 11:00:27 +0530
+categories:
+  - iitk
+  - computer-architecture
+---
+
+The Qualcomm Centriq™ 2400 is an ARM-based server processor developed
+by Qualcomm Datacenter Technologies, Inc. We had Dr. Niket Choudhary
+give a talk on the design on the processor and some of the decisions
+taken while developing it on 16th March 2018 at IIT Kanpur.
+
+#### Motivation
+
+In the 1990s, there were a lot of competing companies rolling out new
+processors all the time. After that, the market settled down a bit in
+the 2000s with Intel, AMD and ATI being the major competitors. With
+the emergence of Smartphones and the need for more power-efficient
+processors, a new race began. Right now, Qualcomm has firmly established
+itself in the mobile-market segment.
+
+Qualcomm has a lot of experience on ARM based CPUs on the Snapdragon Processors:
+* Scorpion and Krait - ARMv7
+* Kryo - 64bit ARMv8
+  
+<br>
+ARM is a pretty simple ISA which is easy to implement, improvise and is very
+popular on mobile devices. Its simple design allows for a power-efficient
+implementation ideal for mobiles.
+
+Qualcomm Datacenter Technologies decided to use this vast experience in
+the mobile market in building server processors where the cost of running
+is also very dependent on the power requirement of the CPUs. This was the
+target of their attempt:
+* Build a power-efficient ARM-based many-core server chip
+* Scale-out performance/efficiency for cloud technologies
+* Disrupt the Datacenter Segment
+
+#### Comparison with other Microprocessors
+
+##### Microprocessor Report (Nov. 2017)
+This new processor has been compared in the Microprocessor Report (Nov 2017)
+with competing state-of-the-art server processors like AMD EPYC 760 and Intel
+Xeon Platinum 8180.
+
+As compared to the competitors, the chip has comparable performance but with
+huge savings on Chip Size, Cost and Power Consumption.
+
+##### [Cloudflare Blog](https://blog.cloudflare.com/arm-takes-wing/)
+
+The folks at cloudflare compared the performance of this processor on 
+benchmarks and have validated that the SoC performs better than Intel's
+Broadwell and Skylake Architectures for Server Application loads like
+gzip, brotli compression and public key cryptography.
+
+#### Qualcomm Centriq SoC Overview
+
+
+##### Falkor CPU:
+The Centriq SoC consists of 48 Falkor CPUs:
+* Fully ARMv8 Compliant
+* 64-bit only as there isn't much legacy code in the cloud segment
+* Hypervisor Support (EL2) and TrustZone(EL3)
+* Cryptography Acceleration Instructions
+* Designed for Performance, Optimized for Power.
+
+All Falkor CPUs occur as a duplex with a total of 24 duplexes.
+
+##### Pipeline
+
+Consists of a 4-Issue, 8-Dispatch Pipeline with variable length for
+different instructions. Maximum depth of 10. Uses register renaming.
+
+##### Branch Prediction
+
+The branch prediction algorithm used is state-of-the-art
+(Not mentioned, but probably some variant of TAGE). The penalty
+for a misprediction is 0-1 Cycle.
+
+This penalty is reduced by using a Branch Target Instruction Cache (BTIC).
+
+##### Caches
+
+There is an unified L3 Cache, unified L2 Cache and L1 ICache and DCache.
+All CPUs have their own L1 caches. One L2 Cache is shared between a duplex
+while the L3 Cache is shared across all CPUs.
+
+Dual tagging (virtual+physical address) is used
+to eliminate TLB from the critical path.
+
+All caches are write-through, read-allocate and write-no-allocate caches.
+
+The following TLBs are there:
+* 64-entry L1 Data TLB
+* 512-entry "final" L2 TLB
+* 64-entry "non-final" L2 TLB
+
+###### Prefetching
+Hardware stride prefetching is used in L1, L2 and L3 caches.
+
+###### L1 Cache
+* 32KB 64-byte lines, 8-way associative
+
+###### L2 Cache
+
+* 128 byte lines, 8-way associative
+* 15 cycle latency for L2 Hit
+
+###### L3 Cache
+
+Quality of Service Extensions:
+* There is a distributed L3 cache
+* Limited / No Allocation Policy Enforcement for Data
+* Fine-tuned Cache Allocation
+  There is fine-tuned cache allocation where a QoSID is associate
+  with cache entries allowing cache to be partitioned into more
+  priority and lesser priority sections.
+* Memory Bandwidth Compression
+  128 byte -> 64 byte compression between memory controller and L3 cache
+  Time taken for decompression is between 2-4 cycles. Compression is not
+  used between other levels because then hit time would increase.
+  
+#### The Talk
+
+The talk was appealing as I somehow managed to understand most of the terms
+being thrown around here and there. I have obtained knowledge about stuff
+like hardware prefetching, branch prediction from the CS422 course itself,
+so it was enlightening to see it being actually used in a real model instead
+of a theoretical one.
+
+It did go a little hifi when Mainak Sir started asking questions and that was to
+be expected :stuck_out_tongue:. Also, I wasn't very informed of the ring stuff
+with reference to which most of the questions were answered.
+
+#### What Excites Me?
+* The comparable performance between ARM and x86 means that eventually we could
+  move to RISC architectures giving us a more simplified instruction set.
+  Most desktop processors still use x86.
+* Qualcomm using the knowledge gained from the mobile market to build cheaper
+  and more efficient products in other markets.
+  
+#### Summary
+
+The folks at QDT have targetted cloud applications and used a decade of their
+experience with ARM Chips to create a competitive server processor. They have
+focussed only on tackling issues with server applications and have managed to
+bring a custom-tuned processor for the datacenter market segment.
