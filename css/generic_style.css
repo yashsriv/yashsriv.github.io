@@ -53,6 +53,7 @@ time {
 }
 
 .post-content p {
+  line-height: 28px;
   margin: 0 auto 28px;
 }
 
@@ -66,6 +67,14 @@ pre, code {
   font-family: 'Source Code Pro', monospace;
   margin: 0 4px 0;
   padding: 2px;
+}
+
+pre {
+  margin-bottom: 28px;
+}
+
+pre code {
+  margin: 0;
 }
 
 .card-panel .row {

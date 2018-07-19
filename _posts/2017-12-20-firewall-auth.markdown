@@ -18,8 +18,7 @@ Save the script as `firewall-auth.sh` in your downloads folder or somewhere.
 Edit the script file's `username` and `password` variable to be your iitk username
 and password. Now execute the following commands after `cd`ing to the folder where
 this file is kept:
-
-```
+```shell
 sudo chmod a+x firewall-auth.sh
 sudo cp firewall-auth.sh /usr/bin/
 ```
