@@ -3,7 +3,7 @@ layout: post
 title: "Thoughts on NYO Internship"
 date: 2016-10-03 15:38:27 +0530
 categories:
-  - nyc
+  - nyo
 ---
   This is my after thoughts on the New York Office Internship, now that its complete.
 I would like to thank Adarsh(@adarshaj) & Vikraman(@vikraman) for all the

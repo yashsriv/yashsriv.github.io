@@ -3,7 +3,7 @@ layout: post
 title: "Day 4: Twitter and Scala"
 date: 2016-05-06 15:38:27 +0530
 categories:
-  - nyc
+  - nyo
   - scala
 ---
  Today I gave up on the sentence anagram assignment... I managed all the functions except the last

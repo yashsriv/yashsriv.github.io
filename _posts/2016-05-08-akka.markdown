@@ -3,7 +3,7 @@ layout: post
 title: "Day 5 and 6: Akka"
 date: 2016-05-08 15:38:27 +0530
 categories:
-  - nyc
+  - nyo
 ---
   The past two days, I have spent wrapping my head about the `akka` library.
 Even the example starting assignments are a little involved and require

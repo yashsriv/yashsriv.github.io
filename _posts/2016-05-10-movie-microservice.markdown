@@ -3,7 +3,7 @@ layout: post
 title: "Day 8: Movie Microservice"
 date: 2016-05-10 15:38:27 +0530
 categories:
-  - nyc
+  - nyo
 tags:
   - akka
   - scala
