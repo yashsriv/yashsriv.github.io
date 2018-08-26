@@ -1,0 +1,12 @@
++++
+draft = false
+date = 2016-05-05T15:38:27+05:30
+title = "Day 3: Huffman Est Cool"
+slug = "nyo-day3"
+tags = []
+categories = [ "nyo" ]
++++
+
+Today I nearly finished the course and decided to try the assignments. Major part
+ of my day was spent trying out the assignments. The Huffman encoding and decoding
+assignment was good and by the end of the day I nearly finished the Sentence Anagram one.

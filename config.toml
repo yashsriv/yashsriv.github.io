@@ -1,0 +1,70 @@
+baseurl = "https://yashsriv.org" # Hostname (and path) to the root.
+title = "Yash Srivastav" # Site title.
+theme = "coder" # Set the theme.
+languagecode = "en" # The site’s language code used to generate RSS.
+defaultcontentlanguage = "en" # The default content language.
+
+paginate = 20 # Default number of pages per page in pagination.
+canonifyurls = true # Enable to turn relative URLs into absolute.
+
+pygmentsstyle = "monokai" # Color-theme or style for syntax highlighting.
+pygmentscodefences = true # Enable code fence background highlighting.
+pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
+
+enableEmoji = true
+
+disqusShortname = "yashsriv" # Enable or disable Disqus.
+
+googleAnalytics = "UA-78163300-3"
+
+[params] # theme parameters
+    author = "Yash Srivastav" # Author's name.
+    info = "CSE Senior Undergraduate, IIT Kanpur" # Author's job title or info.
+    description = "Yash Srivastav's personal website" # Site description.
+    keywords = "blog,developer,personal" # Site keywords.
+    avatarurl = "images/dp.jpg" # Contain the path of the optionnal avatar in the static folder.
+
+    footercontent = "Hacker. Developer. Geek." # Add footer content
+
+    # Whether you want to hide copyright and credits in the footer.
+    hideCredits = true
+    hideCopyright = true
+
+    # Custom CSS
+    custom_css = [ "styles/custom.css" ]
+
+# Social links
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github fa-2x"
+    weight = 1
+    url = "https://github.com/yashsriv/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin fa-2x"
+    weight = 3
+    url = "https://linkedin.com/in/yashsriv/"
+[[params.social]]
+    name = "Facebook"
+    icon = "fab fa-facebook fa-2x"
+    weight = 2
+    url = "https://facebook.com/yash98/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter fa-2x"
+    weight = 3
+    url = "https://twitter.com/therealyashsriv/"
+
+# Menu links
+[[menu.main]]
+    name = "About"
+    weight = 1
+    url  = "/about"
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "/posts/"
+[[menu.main]]
+    name = "Resume"
+    weight = 1
+    url = "/resume.pdf"
