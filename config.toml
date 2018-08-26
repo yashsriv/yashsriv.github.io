@@ -67,4 +67,4 @@ googleAnalytics = "UA-78163300-3"
 [[menu.main]]
     name = "Resume"
     weight = 1
-    url = "/resume.pdf"
+    url = "/files/resume.pdf"
