@@ -5,6 +5,7 @@ title = "Qualcomm Centriq™ 2400"
 slug = "qualcomm-centriq"
 tags = []
 categories = [ "iitk", "computer-architecture" ]
+aliases = [ "/2018/03/qualcomm.html" ]
 +++
 
 The Qualcomm Centriq™ 2400 is an ARM-based server processor developed

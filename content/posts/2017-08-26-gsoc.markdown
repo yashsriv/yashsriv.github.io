@@ -5,6 +5,7 @@ title = "My GSoC Project"
 slug = "gsoc-finale"
 tags = []
 categories = [ "gsoc" ]
+aliases = [ "/2017/08/gsoc.html" ]
 +++
 
 #### The Project

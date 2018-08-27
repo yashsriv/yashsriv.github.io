@@ -5,6 +5,7 @@ title = "NYU Internship"
 slug = "nyu-finale"
 tags = []
 categories = [ "nyu" ]
+aliases = [ "/2018/07/nyu.html" ]
 +++
 
 So, I have finally completed my internship at NYU Tandon for this summers

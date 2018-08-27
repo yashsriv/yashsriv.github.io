@@ -5,6 +5,7 @@ title = "Thoughts on NYO Internship"
 slug = "nyo-finale"
 tags = []
 categories = [ "nyo" ]
+aliases = [ "/2016/10/thoughts.html" ]
 +++
 
   This is my after thoughts on the New York Office Internship, now that its complete.

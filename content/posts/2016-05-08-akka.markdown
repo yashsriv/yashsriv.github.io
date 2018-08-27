@@ -2,9 +2,10 @@
 draft = false
 date = 2016-05-08T15:38:27+05:30
 title = "Day 5 and 6: Akka"
-slug = "nyo-day5"
-tags = []
+slug = "nyo-akka"
+tags = [ "akka", "scala" ]
 categories = [ "nyo" ]
+aliases = [ "/2016/05/akka.html" ]
 +++
 
   The past two days, I have spent wrapping my head about the `akka` library.

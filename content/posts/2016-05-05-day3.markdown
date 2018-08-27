@@ -3,8 +3,9 @@ draft = false
 date = 2016-05-05T15:38:27+05:30
 title = "Day 3: Huffman Est Cool"
 slug = "nyo-day3"
-tags = []
+tags = [ "scala" ]
 categories = [ "nyo" ]
+aliases = [ "/2016/05/day3.html" ]
 +++
 
 Today I nearly finished the course and decided to try the assignments. Major part

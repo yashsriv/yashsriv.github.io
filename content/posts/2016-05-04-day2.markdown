@@ -3,8 +3,9 @@ draft = false
 date = 2016-05-04T15:38:27+05:30
 title = "Day 2: Scala and Math"
 slug = "nyo-day2"
-tags = []
+tags = [ "scala" ]
 categories = [ "nyo" ]
+aliases = [ "/2016/05/day2.html" ]
 +++
 
   So today I went on with Martin Odersky's course and just completed week 5.

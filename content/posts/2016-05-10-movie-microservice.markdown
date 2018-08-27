@@ -5,6 +5,7 @@ title = "Day 8: Movie Microservice"
 slug = "nyo-day8"
 tags = [ "akka", "scala" ]
 categories = [ "nyo" ]
+aliases = [ "/2016/05/movie-microservice" ]
 +++
 
   Today I finally had enough confidence with `akka-http` to try and understand the

@@ -5,6 +5,7 @@ title = "Automatic Fortinet Firewall Authentication (Linux)"
 slug = "firewall-auth"
 tags = []
 categories = [ "iitk" ]
+aliases = [ "/2017/12/firewall-auth.html" ]
 +++
 
   This post will detail how one could set up their linux systems
