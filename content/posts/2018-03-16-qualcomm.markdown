@@ -23,6 +23,7 @@ processors, a new race began. Right now, Qualcomm has firmly established
 itself in the mobile-market segment.
 
 Qualcomm has a lot of experience on ARM based CPUs on the Snapdragon Processors:
+
 * Scorpion and Krait - ARMv7
 * Kryo - 64bit ARMv8
   
@@ -35,6 +36,7 @@ Qualcomm Datacenter Technologies decided to use this vast experience in
 the mobile market in building server processors where the cost of running
 is also very dependent on the power requirement of the CPUs. This was the
 target of their attempt:
+
 * Build a power-efficient ARM-based many-core server chip
 * Scale-out performance/efficiency for cloud technologies
 * Disrupt the Datacenter Segment
@@ -61,6 +63,7 @@ gzip, brotli compression and public key cryptography.
 
 ##### Falkor CPU:
 The Centriq SoC consists of 48 Falkor CPUs:
+
 * Fully ARMv8 Compliant
 * 64-bit only as there isn't much legacy code in the cloud segment
 * Hypervisor Support (EL2) and TrustZone(EL3)
@@ -94,6 +97,7 @@ to eliminate TLB from the critical path.
 All caches are write-through, read-allocate and write-no-allocate caches.
 
 The following TLBs are there:
+
 * 64-entry L1 Data TLB
 * 512-entry "final" L2 TLB
 * 64-entry "non-final" L2 TLB
@@ -112,6 +116,7 @@ Hardware stride prefetching is used in L1, L2 and L3 caches.
 ###### L3 Cache
 
 Quality of Service Extensions:
+
 * There is a distributed L3 cache
 * Limited / No Allocation Policy Enforcement for Data
 * Fine-tuned Cache Allocation
