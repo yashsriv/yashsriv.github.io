@@ -13,7 +13,7 @@ and am now returning back on my flight. I was at the Centre for
 Cyber Security under Prof. Justin Cappos and working on their in-house
 Supply Chain Security Tool - [in-toto](http://in-toto.io).
 
-<!-- customary nyc skyline picture -->
+![Customary NYC Skyline Pic](/images/nyc-skyline.jpg "Customary NYC Skyline Pic")
 
 I'll start with my experience in the city then bore you with the project.
 
@@ -82,6 +82,5 @@ of what they have downloaded to ensure that the package hasn't been compromised.
 be automated by using an apt-transport/plugin to automatically verify and only install a
 package if a certain threshold is met.
 
-Some work on this is still left and I intend to finish it in the next few days. The code and
-documentation can be found at
+Some work on this is still left. The code and documentation can be found at
 [salsa.debian.org](https://salsa.debian.org/yashsriv-guest/debian-rebuilder-setup/tree/integrate-srebuild)

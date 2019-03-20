@@ -1,5 +1,5 @@
 baseurl = "https://yashsriv.org" # Hostname (and path) to the root.
-title = "Yash Srivastav" # Site title.
+title = "Yash's Blog" # Site title.
 theme = "coder" # Set the theme.
 languagecode = "en" # The site’s language code used to generate RSS.
 defaultcontentlanguage = "en" # The default content language.
