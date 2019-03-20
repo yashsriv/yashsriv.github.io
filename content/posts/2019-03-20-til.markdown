@@ -1,0 +1,19 @@
++++
+draft = false
+date = 2019-03-20T18:35:27+05:30
+title = "TIL Series"
+slug = "til-series"
+tags = [ "til" ]
+categories = [ "meta" ]
++++
+
+I have recently realised that over the past few years, I have learnt so many
+new things and some things which I discover, forget and then rediscover again.
+There is a huge knowledge bank in my head which is specific to me and things I
+tried to explore. But the fact is, I learnt everything one day at a time. Those
+days together have culminated into the knowledge bank I now possess.
+
+Also, I don't usually get the time to write a lot of blog posts. So I have
+decided to write short, [/r/todayilearned](https://www.reddit.com/r/todayilearned)
+type of posts whenever I discover something new. All such posts will be
+listed at [til](/tags/til).

@@ -1,0 +1,39 @@
++++
+draft = false
+date = 2019-03-21T00:20:23+05:30
+title = "TIL: PAPI"
+slug = "til-papi"
+tags = [ "til" ]
+categories = [ "systems" ]
++++
+
+For my course project in the course Parallel Programming at IIT Kanpur,
+I had to simulate an MPI program on the Lab cluster managed by the CSE
+Deapartment. Not going into too many details, I wanted to get a measure
+of time taken by the process between two functions even when the process
+is being switched in and out of RAM.
+
+If process scheduling wasn't an issue, I could have directly timed between
+the two function calls and then used that. Since process scheduling comes
+into play, there is no reliable way (that I could find) to get the time
+spent by the process running on the CPU. To solve this problem, I decided
+that it would be better to just get a count of the number of assembly
+instructions executed between the two functions and then using the average
+CPI of the architecture and the clock speed of the processor installed in
+the CSE lab, calculate the time taken.
+
+While searching how to do this, I found out about
+**Performance Application Programming Interface (PAPI)**. This was an awesome
+library which allows measuring exactly what I wanted with a simple to use API.
+For example, in my use-case, all I needed to do was this:
+
+```c
+long long ins_count;
+float rtime, ptime, ipc;
+handle_papi_error(PAPI_ipc(&rtime, &ptime, &ins_count, &ipc));
+```
+
+The above would give me the instruction count when needed in the `ins_count`
+variable.
+
+I haven't explored PAPI fully, but found it pretty interesting so that's all.
