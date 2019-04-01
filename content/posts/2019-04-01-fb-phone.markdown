@@ -1,0 +1,66 @@
++++
+draft = false
+date = 2019-04-01T18:01:02+05:30
+title = "FB Interview Experience Part 2: Phone Interview"
+slug = "fb-interview-2"
+tags = []
+categories = [ "interview" ]
+series = ["fb-interview"]
++++
+
+As I mentioned in the [previous part](/posts/fb-interview-1), my phone
+interview was scheduled on 28th August 7:00 - 7:45 PM IST. The interview
+was over [BlueJeans](//bluejeans.com) and the collaborative coding environment
+was [coderpad.io](//coderpad.io). I already knew the name of my
+interviewer beforehand and did take a look at his LinkedIn profile and
+areas of interest.
+
+# The interview
+
+So, instance #2 of being lucky - my interviewer was someone who regularly
+used OCaml and was in general a FP person (I knew this from his LinkedIn).
+Now, I am pretty well-versed in FP (not an expert or anything but I can write
+code which works), haskell and scala. I had also done a course on Functional
+Programming in the previous semester and so was in touch with puzzle questions
+which are typically solved using functional languages - list/tree traversals.
+I was also familiar with notations. I'm mentioning all the above because the
+knowledge actually helped in the interview.
+
+**NOTE: Due to NDA, I can't reveal the questions which were asked**
+
+So the question which was given to me was more attuned to functional languages as its very
+easy to pattern match and stuff while writing algorithms in them. I believe someone
+not familiar with this would have been slightly confused by the form of
+the question and the data structure I was using.  
+**P.S.** I had actually solved this exact question in one of the pattern matching
+assignments of the course mentioned before.
+
+Looking back, I could have actually written a pretty elegant solution to it in
+haskell using pattern matching without too much effort (2 lines).
+
+But somehow, I had gone into the interview thinking that I'll code my solution in
+C++ (which is sort of the standard for algorithmic questions) and I hadn't written
+haskell in like 3-4 months. I ended up writing a longer solution in C++. Alongwith
+the null pointer error handling, I guess I wrote around 40 lines of code, which did
+take some time.
+
+Once my implementation was done, we discussed edge cases, cases when the function could
+fail and even solutions to it. And that was it. My interview lasted about 35-40 minutes.
+
+# Post Interview
+
+I thought that usually 45 minute interviews have atleast 2 questions, so somehow I had
+performed badly - using up all the time on only one question, but my interviewer had mentioned
+somewhere in between that this was the only question he had brought so I wasn't too scared.
+
+At the same time slot and date when I had my interview, another one of my friends also had his
+phone interview. We both had been referred by Sayash and had the exact same date and time slots.
+His interviewer asked him more standard algorithmic questions (but I remember that it would
+have been difficult for me to solven one of them). So, lucky again!!
+
+My interviewer had mentioned that they would get back to me within 2 weeks, so I was ready for the
+wait. To my surprise and happiness, I received a mail at 9:00 a.m. the very next day
+(29th August) informing me that they'll be moving forward with the next stage of the interview
+which were the onsite rounds in the London Office.
+
+Details of the onsite rounds in the [next part](/posts/fb-interview-3).

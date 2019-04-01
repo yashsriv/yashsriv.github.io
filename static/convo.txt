@@ -1,0 +1,754 @@
+<Saksham>
+Yo people
+Especially Kapila
+Yash had some ideas about how why Pclub is not up to the mark of sdslabs
+
+<Kunal>
+sure
+batao
+
+<Saksham>
+Basically, the membership in pclub is like, temporary. Unlike rcon, or hackcave, or sdslabs
+
+<Kunal>
+agreed
+
+<Saksham>
+Is there a workaround? I understand we cannot give so many PoRs easily without enough work for people.
+But perhaps senate/gymkhana has a way?
+
+<Kunal>
+gensec can ratify people
+like he ratifies secys
+
+<Saksham>
+Also, we'd need projects for people to work on, and select people if they are self-motivated enough.
+
+<Kunal>
+give them a certi
+
+<Saksham>
+Haan that'd be a non-coordie post which involves coding but not the admin shit
+Perhaps
+Something like hackcave would be nice, if there are enough projects/self-motivated people
+
+<Saksham>
+i said what i could draw from yash's idea on IRC, sharing here
+
+<Yash>
+Oh..I finally realised what makes robocon different from roboclub   / sdslab different from their pclub   ...................
+Once you are in the group, you are a member forever... you work till you don't want to work anymore (same for hackcave)...........
+with our gymkhana clubs, most secys  feel that they don't owe the club anything if they aren't the cordies.....very few actually continue contributing
+
+<Kunal>
+yeah
+this problem has been realised several times
+but koi solution nahi socha hai as such
+
+<Saksham>
+i suggested something upar, didn't it
+*i
+
+<Kunal>
+I meant
+implement nahi kiya hai kab
+hi
+
+<Yash>
+The projects for people to work on is also very hard.... sdslabs have projects which require
+active maintenance and new members are trained for managing the projects and improving them.... most pclub projects are one time. Puppy Love is one of the exceptions.
+
+<Kunal>
+So essentially you are suggesting more long term projects
+As one of the solutions to the problem
+
+<Yash>
+Also.. who approves Team Robocon/ AUV?? Do they have so many members because they aren't part of gymkhana?
+
+<Saksham>
+they are now. they're called TEAMS
+separate provisions for teams which take part in contests
+
+<Kunal>
+Yeah
+
+<Saksham>
+i think if you can list down 5-10 different and new projects which can be done as a group, we have a good group coming up.
+but we need a critical mass to be able to go anywhere with this
+
+<Kunal>
+Only their team leaders are ratified by the senate
+Not the complete team
+As far as I remember
+
+<Saksham>
+yeah, i was ratified by snt council, not senate. as rcon
+
+<Kunal>
+We will need people to maintain the student search, pclub website, puppy love, Gymkhana server(s) (when we get it)
+What else?
+
+<Saksham>
+dashboard has a billion possibilities
+
+<Kunal>
+Oh right
+Dashboard
+I'll prefer if we break the dashboard into modules
+And not keep it as a whole
+When we talk about its maintenance
+
+<Yash>
+its modularised
+currently 6 repos 😛
+
+<Saksham>
+Just the UI is common
+
+<Kunal>
+What all modules does it have?
+
+<Yash>
+Student Search, Main Login Stuff, Share Auto  Tempo, Schedule Stuff.. I was thinking separate org @saksham or maybe links to each in the main composer repo
+
+<Kunal>
+Yeah
+To dashboard ke sub modules maintain karna is a good idea
+We can add them to the list
+Any other thing 
+What all do SDS labs maintain /do
+
+<Yash>
+Share IITK equivalent stuff... I have that too as an option
+
+<Saksham>
+pirated shit 😛
+
+<Kunal>
+Ye sab ke liye we can keep specialized people
+
+<Kunal>
+Not as coordinators or secys
+But verified by the gensec
+
+<Saksham>
+not necessary. let's have something like hackcave
+
+<Kunal>
+What do you mean by something like Hackcave?
+
+<Saksham>
+how do you work in hackcave?
+i'll quote aj
+
+<Saksham>
+"because they learn new things and get to exchange ideas in a peer group that's on similar frequency" - adarshaj
+that's a quote
+
+<Kunal>
+So?
+I didn't get your point
+
+<Saksham>
+let's have a group bound together by that
+like rcon is
+
+<Kunal>
+Yeah
+But
+Do you want to keep secys/coordies independent of this group
+I don't want to
+
+<Saksham>
+2nd year only secy position
+3rd year coordie/member
+
+<Yash>
+that is the point.. rcon doesn't have secys cordies... its just seniority
+
+<Saksham>
+member ko thoda cool naam de do
+contributor let's say
+
+<Kunal>
+Hacker
+
+<Saksham>
+coordies will handle financial stuff
+everyone will want to be the equivalent of coordie then. how will you decide who to ratify?
+hacker is good
+
+<Kunal>
+Secys limited rakho
+For administrative purposes
+Bills
+Bookings
+Etc type
+Hacker ke liye selection tests ho
+
+<Saksham>
+3rd year mein?
+
+<Kunal>
+Open to all years
+
+<Saksham>
+oh
+
+<Kunal>
+Maybe 1st year mein
+Recruitment test is what my intention is
+
+<Saksham>
+yash, discuss with others and chalk out a feasible solution for this?
+idea is good
+we can even leverage takneek's black box
+but that is too early i think
+
+<Kunal>
+We can use that
+
+<Saksham>
+could be used as a level1 test
+there will be more tests at end of 1st year
+
+<Kunal>
+Umm, not exactly
+
+<Saksham>
+so new joinees can come in too
+oh i meant, 1st test. multiple tests rakh lo.
+
+<Kunal>
+Ek main test rakho
+Usme ek qualifier and and final test
+
+<Yash>
+^ or an interview
+
+<Saksham>
+test + interview let's say
+
+<Kunal>
+Final test ke liye wildcards like Blackbox top 5 teams
+FPC top 3 winners
+Aisa kuchh
+
+<Yash>
+interviews give you a better idea.... sdslabs has 4 hours interview for the 1st year recruitments....
+after that its done... member for life
+
+<Saksham>
+nice
+
+<Kunal>
+And what about people jo uss test mein nahi ho paaye, but want to continue?
+And what special will we give to these "hackers"
+Last year bhi yahaan tak mein aur pallav aakar atak gaye the
+Then we gave up
+And what if banda 2nd year mein aakar seekh gaya, and ab banna chahata hai PClub certified hacker
+
+<Saksham>
+2nd yearites ke liye interview
+
+<Kunal>
+Ye sab kuchh issues hai iss process mein
+
+<Saksham>
+we can't let everyone come in
+we will end up in the same shithole
+
+<Kunal>
+Wahi to baat hai...
+
+<Saksham>
+we want them to be able to help each other, and teach each other
+they will also take public lectures
+
+<Kunal>
+Why not make then teach others
+
+<Saksham>
+because of 100 reasons
+
+<Kunal>
+*them
+
+<Saksham>
+public lectures are shit
+and are slow
+and can never touch details
+and don't give practical experience
+hackers are supposed to learn things by hacking.
+
+<Kunal>
+But then we aren't promoting programming in general
+Which pclub should do
+
+<Saksham>
+public lectures don't go down
+abhi bhi hain. hote raheinge
+coordies ensure that
+hackers hack
+
+<Kunal>
+I think this hacker stuff should be in parallel to what is currently happening
+
+<Saksham>
+that's what i think, both me and yash implied.
+
+<Kunal>
+And jo currently ho rha hai, that should be the first priority
+Hackers can be a self sustainable group
+But others can't learn if we dont teach
+Aisa na ho jaaye ki hamara priority shift ho jaaye gradually
+And phir pclub stops being what it was meant to do
+Increase programming culture in campus
+Woh 10 log ko honge Hackers woh to seekhte hi rahenge agar pclub na bhi ho
+Kyunki agr woh itne rigorous process se aaye hai to aata hoga kaafi
+And na bhi mile pclub ka support to shsyad aagae badh jaaye
+But baaki campus junta nahi
+
+<Saksham>
+it will still have to conduct contests. which is required to be under snt.
+lectures same hi honge
+bas we'll have a place to use our funds, and build a repo like roboclub etc
+izzat hogi club ki
+
+<Kunal>
+Easy to say
+Coordinators 3rd year honge
+Ek hi cheez par focus kar payenge apart from acads
+Not maintaining the club activities and that hacker group
+
+<Saksham>
+hacker group is self sustained
+coordies will not have to hack on puppylove etc
+which is good
+their load will be lessened
+coordies can focus on taking lectures, and teaching hackers, rather than code themselves
+
+<Kunal>
+So coordinators ko hamm essentially administrative stuff par restrict kar denge?
+
+<Saksham>
+it is up to them to code
+also, yeh bataa, how many coordies coded for pclub this year?
+
+<Kunal>
+Why will people be motivated to become a coordinator then
+
+<Saksham>
+kara kya hai tune iss year apart from taking lectures and admin stuff?
+that's what coordie is for
+for passing on knowledge
+
+<Kunal>
+And what about hackers?
+What are they for?
+
+<Saksham>
+code is not top priority. even if i coded, it was non-essential, honestly
+coordie should not have had to do that
+it took my attention away from lectures
+
+<Kunal>
+I want this thing
+But clear nahi hoon Exactly kya karega ye group of hackers
+
+<Saksham>
+code
+sysad
+the only new job for coordie is to oversee hacker group admissions and teaching
+coordies will not be forced to code / deploy puppy love now
+or deploy other stuff
+we will be able to have resourceful people as coordies, without compromizing on the coding workforce of pclub
+
+<Kunal>
+I get the idea
+But mera point samajh
+Won't this discourage people to become coordinators
+Code karne ko nahi milega
+Sirf lectures lene, admin stuff
+
+<Yash>
+Plus we currently don't have that much of a workforce...and probably won't 😞
+
+<Kunal>
+wahi
+jo ye sab soch rahe hai hamm log
+all this is assuming ki we have enough people, either skilled or interested
+*and
+
+<Saksham>
+having 1st years as hackers will increase the workforce
+we're still 2 years away from coordies who will hack beside hackers
+
+<Kunal>
+but utne 1st year skill log kahan se aayenge
+
+<Saksham>
+abhi toh fresher hack-force banaa ke dekho
+
+<Kunal>
+and agar woh skilled nahi to kiss basis par selection
+
+<Saksham>
+1st years are always dumb. when thrown into rcon, everyone becomes experts
+i believe, if rcon can work, this can too
+
+<Kunal>
+^I am not sure about this
+rcon has a target to achieve at the end of the year
+uski functioning alag hai
+
+<Yash>
+probably the best we can do is first year recruitment type thing at end of 1st semester
+and then training stuff in winters... will just require dedication from existing members
+to stay back.... some of the people being trained will have a target -
+be proficient enough to work on puppy love, to update student search for next year.. blah blah
+
+<Saksham>
+to become coordie
+publicize it as a goal
+and people will desire it
+just like what is done for prezi in the first year
+prezi name is enough to make people become prezi
+without knowing the job
+
+<Kunal>
+but in the 1st place, we wanted that coordie ka kaam alag hai hacker se
+
+<Saksham>
+(i've seen freshies like that)
+doesn't matter. hackers will be upgraded to secys too
+
+<Kunal>
+these targets are not lucretive
+but we will still need separate secys for admin stuff
+and unn dono ko hamm secy bolenge
+to fair nahi hoga
+
+<Saksham>
+yash, can you design a nice system in discussion with others? show us a a brief, informal proposal?
+
+<Kunal>
+proposal par to baad mein aaye
+pehle line of thought to clear ho
+
+<Saksham>
+dude, it will save time
+
+<Yash>
+no secy would want to become a secy for admin stuff.... veryone knows that...
+kisi ka target nahin hota hain ki hum lecture hall book karwayenge.. bahut maza aayega
+
+<Saksham>
+LOL. Yeah, that's why, think of something, no?
+
+<Kunal>
+and expecting trained hackers to become secys and do admin stuff isn't exactly fair on their part
+
+<Saksham>
+2nd year mein hackers will be known as secys.
+1st year mein "<insert name>"
+
+<Kunal>
+hackers is a better name 😛
+
+<Saksham>
+3rd year mein "hackers"
+
+<Kunal>
+and coordies?
+
+<Saksham>
+coordies are hackers with admin and lecture stuff
+who get ratified by senate
+and who get all admin passes by default 😛
+and who get to take lectures
+
+<Yash>
+for cordie, you give a proper cordie interview.... others just get promoted to hacker
+
+<Saksham>
+actually, hackers can take lectures too
+and yes, yash is right
+
+<Kunal>
+yeah
+this is better
+
+<Saksham>
+if you don't code enough, you don't get ratified
+by gensec, as a hacker
+
+<Kunal>
+let's keep levels
+as in
+agar koi banda wants to join this pclub group in 2nd year for the 1st time
+
+<Saksham>
+he will still be secy?
+
+<Kunal>
+to usko hamm "trainee" hi bolenge
+
+<Saksham>
+NO!
+
+<Kunal>
+aisa kuchh
+
+<Saksham>
+no one will want to be compared to freshies
+and thus, i don't want to call 2nd year hackers as hackers
+coz that's what 3rd years will be
+
+<Kunal>
+his first year in pclub will be "trainee"
+2nd year in pclub will be "secy"
+3rd year as "hacker"
+
+<Saksham>
+use seniority, like rcon does
+:(
+personal opinion. i won't enforce
+
+<Kunal>
+2nd year members in rcon jo pehli baar rcon aaye
+woh kaise treat hote hai?
+
+<Saksham>
+they are still senior members
+@yash am i right?
+
+<Kunal>
+to phir aisa karna hoga ki selection is 2nd year will be much more difficult
+
+<Yash>
+yeah... and they are still supposed to know something ...
+that's why they are seniors... not because of being seniors
+
+<Saksham>
+but this year, selection will have to remain same for 2nd years since we have no "trainee" force
+
+<Kunal>
+theek hai
+that can be managed for a year
+"trainee" banna hai 2nd year mein to easier hai
+but if you want to be called secy to mushkil hoga selection process
+aisa kuchh?
+we will keep this option open for everyone
+like application for trainee, secy and hacker
+and coordie too
+
+<Yash>
+for secy.... you must be qualified enough to be secy that's all.. something like you must have the skills....
+maybe you acquired them in an internship during the summers
+
+<Saksham>
+no. people may still be worthy of trainee, but may apply for secy and lose out
+
+<Kunal>
+and any year ka banda can apply for any post
+
+<Saksham>
+you mean, apply for both?
+
+<Kunal>
+haan, progressive applications hongi
+pehle coordie
+then hacker
+then secy
+then trainee
+
+<Saksham>
+so incoming secy team gonna be shitty
+
+<Saksham>
+secys automatically become hacker, unless they choose not too. but we may take external hackers via interview
+
+<Kunal>
+yes
+
+<Saksham>
+which will be very tough
+
+<Kunal>
+what about the algo group we have create this year
+where does that fit in this model?
+
+<Saksham>
+that's a learning group
+let it remain
+send mail to @all twice a sem about it
+
+<Kunal>
+mushkil ho jayega maintain karna
+
+<Saksham>
+so new people can join in
+
+<Kunal>
+once a sem
+
+<Saksham>
+algo coordie maintains it
+
+<Kunal>
+pclub coordie will become a very demanding job then
+
+<Saksham>
+algo coordie doesn't have to bother about hacker side of the club if he wnats
+dev coordie ka kaam hoga voh
+
+<Kunal>
+ye thoda weird ho gaya
+
+<Yash>
+the hacker group is to ensure that something productive (read deployable and marketable publicly)
+comes out of pclub....algo and rest are the usual pclub stuff which will continue....
+the problem is dedicated people staying on even in 3rd year under pressure
+
+<Kunal>
+sirf dev ke liye itna extensive model banana, thoda ajeeb lagg raha hai
+but agar bana hi rahe hai to chill hai
+and jo foss wala google group hai
+usme learners rakhenge
+
+<Saksham>
+foss group will merge with this part i think
+foss group doesn't have much right nowSeen by Pallav Agarwal at 00:31
+and we have #pclub for ourselves
+
+<Kunal>
+haan wahi
+non trainee, but interested ke liye foss group
+who may choose to apply for secy next time
+
+<Yash>
+the problem is - this is essentially something like navya....
+which died out in the end.........Why? can you give some reasons?
+we need to think about that too....if it dies out in 2 years, then it was useless
+
+<Kunal>
+it seems like we are converging at something now
+so, yash, talk to others and come up with some writeup (proposal) on this describing the details
+
+<Yash>
+lets have a proper discussion with everyone interested in improving the pclub....
+aj, other cordies..maybe current secys?? their views might also be nice.
+I'll try and condense this into a proper format which can be attached in a mail or shared on #pclub.....
+
+<Kunal>
+yash, talk to people individually about this idea
+jisse bhi karni ho tujhe, up to you
+and then condense them
+no need to make more group chats
+but umm, I see your point
+this is a very people dependent system
+log gaye
+things will die down
+this structure of seniority will help this in becoming long term
+so yeah
+a formal structure was missing from navya
+
+<Yash>
+ok then.. I'll talk with aj, milind, khosla, anyone else who comes to mind and see what I come up with...
+Please try not to discuss any further 😛 ...it'll become hard to track...
+saksham just give reasons if you can think of any why navya died out...I want to know the disadvatages of this
+if we really don't want to do too much effort on the establishment part, we could revitalise this as navya itself
+
+<Kunal>
+how will it be different
+
+<Yash>
+on the structure and stuff
+I meant navya with structure
+
+<Kunal>
+nayva to abhi dead hai 😛
+bass naam hi baaki hai
+
+<Yash>
+its a name known to some... like profs bhi jaante hain... ppk for example
+
+<Kunal>
+name same rakhne par soch sakte hai
+that is irrelevant for now
+it will be either under navya, or pclub directly
+
+<milindl>
+"rcon has a target to achieve at the end of the year" yes EXACTLY we need targets if we do this
+it won't die out if we have a room and critical mass
+let me think of potential issues
+on what basis is selection (what will interview be on?
+
+<yashsriv>
+secy and hacker interviews are set.... on your ability
+for trainee - what are current pclub secy interviews on?
+
+<milindl>
+they leverage current skill
+but that;s not possible in November
+a lot of kids are new to coding
+even if a person has potential they can't display it if they've never used it
+current secy interviews are after you have laptops + winters to code + ESC101 for both batches
+I mean; if a person is interested in coding it is reasonable to expect _some_ effort till April. But till November? Chances are much lower
+Given that Midsems tak to anyone doesn;t have a laptop, then you have spectrum udgo antar in quick succession
+we need to have 2 interviews OR jan interviews, potentially missing out on winter camp. Winter camp can be exclusively for secys?
+
+<yashsriv>
+That is why the later interviews for people still interested.......... Electronics club has a winter school ?? How do they separate out people / is it open to all??
+
+<milindl>
+oh
+is that enthu based?
+
+<yashsriv>
+first 40 students
+
+<milindl>
+first come first serve is poor
+
+<yashsriv>
+we'll have a better cutoff.... a test
+you are not in favour of an interview
+but I think we need the winter training...or do you want to make it summer training
+
+<milindl>
+agreed, but what sort?
+our test then needs to follow a SDS format ?
+1 algorithmic task, 1 google-it-yourself-dev task
+I'm not sure. The selection test needs to be more intensive
+
+<yashsriv>
+ughh..that's why the interview..but if they have no experience hard to do it
+
+<milindl>
+yes, but learning quickly is a valuable skill.
+Khosla is a potential 'hacker
+prototype of a 'hacker'
+
+<adarshaj>
+the problem with hackers being part of a system with formal structure is got to do with the 'formal structure' part.
+let me first talk about why navya was formed (as per my discussions with early members on irc)
+the problem with student gymkhana is that they alienate anyone with low cpi - below 6.5, and usually,
+if you are from a non-cs/ee dept, then picking up interest in dev/ops would mean faring badly on acads in turn affecting cpi
+(this problem is pretty real - when i took over navya, all the members then were from non-cs dept. and all of them had their degree extended)
+but, they were all excellent hackers - most part of large foss group with commit rights
+
+okay, i read through multiple posts. I think the main reason sds labs works out is due to their execution of ideas
+they have very specific projects, which have high visiblity that probably motivates students to be part of the team that creates them
+also, you are right about lack of continued participation in pclub, that has always been a problem
+
+hackcave, was originally setup to prove that students can actually take a large project to completion in a professional way
+but hackcave is yet to reach there, we have set a very high standard for ourselves
+
+on the other hand, sds labs also seems like a mix of ecell + pclub to me
+they have spin offs that can potentially be startup
+our ecell on other hand is very conservative and secretive, which i totally hate (there is reasons for its operation to be that way.. but still.)
+these thoughts aren't properly organized, but mostly just brain dump. may be all of us should talk about the objective of this dev group once irl
+
+also this post - https://blog.sdslabs.co/2017/01/working-at-sdslabs-12 - captures the essence of their group

@@ -1,6 +1,8 @@
 baseurl = "https://yashsriv.org" # Hostname (and path) to the root.
 title = "Yash's Blog" # Site title.
+
 theme = "coder" # Set the theme.
+
 languagecode = "en" # The site’s language code used to generate RSS.
 defaultcontentlanguage = "en" # The default content language.
 
@@ -17,21 +19,40 @@ disqusShortname = "yashsriv" # Enable or disable Disqus.
 
 googleAnalytics = "UA-78163300-3"
 
+[blackfriday]
+    hrefTargetBlank = true
+
 [params] # theme parameters
     author = "Yash Srivastav" # Author's name.
-    info = "CSE Senior Undergraduate, IIT Kanpur" # Author's job title or info.
+    info = "Software Engineer, Facebook London" # Author's job title or info.
     description = "Yash Srivastav's personal website" # Site description.
     keywords = "blog,developer,personal" # Site keywords.
-    avatarurl = "images/dp.jpg" # Contain the path of the optionnal avatar in the static folder.
+    avatarurl = "images/dp-airstrip.jpg" # Contain the path of the optionnal avatar in the static folder.
 
-    footercontent = "Hacker. Developer. Geek." # Add footer content
+    footercontent = "<a href=\"http://www.catb.org/~esr/faqs/hacker-howto.html#what_is\" target=\"_blank\">Hacker</a>. Developer. Geek." # Add footer content
 
     # Whether you want to hide copyright and credits in the footer.
     hideCredits = true
     hideCopyright = true
 
+    rtl = false
+
+    # Use inverted colors
+    inverted = false
+
+    # Series see also post count
+    maxSeeAlsoItems = 5
+
     # Custom CSS
     custom_css = [ "styles/custom.css" ]
+
+    # Custom JS
+    custom_js = []
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
 
 # Social links
 [[params.social]]
@@ -55,16 +76,23 @@ googleAnalytics = "UA-78163300-3"
     weight = 3
     url = "https://twitter.com/therealyashsriv/"
 
-# Menu links
-[[menu.main]]
-    name = "About"
-    weight = 1
-    url  = "/about"
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "/posts/"
-[[menu.main]]
-    name = "Resume"
-    weight = 1
-    url = "/files/resume.pdf"
+[languages]
+    [languages.en]
+        languagename = "English"
+        # Menu links
+        [[languages.en.menu.main]]
+        name = "About"
+        weight = 1
+        url  = "/about"
+        [[languages.en.menu.main]]
+        name = "Uses"
+        weight = 2
+        url  = "/uses"
+        [[languages.en.menu.main]]
+        name = "Blog"
+        weight = 3
+        url  = "/posts/"
+        [[languages.en.menu.main]]
+        name = "Resume"
+        weight = 4
+        url = "/files/resume.pdf"

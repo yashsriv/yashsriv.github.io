@@ -1,0 +1,121 @@
++++
+draft = false
+date = 2019-04-03T19:49:32+05:30
+title = "FB Interview Experience Part 3: On-Site Interviews"
+slug = "fb-interview-3"
+tags = []
+categories = [ "interview" ]
+series = ["fb-interview"]
++++
+
+This is my final post in my facebook interview series. This comes after:
+
+* [Part 1](/posts/fb-interview-1)
+* [Part 2](/posts/fb-interview-2)
+
+My final on-site interviews were scheduled on the 9th October in the London Office
+on something people at facebook call "University Day". Its mostly a day for
+interviewing undergrads or people who have just finished their undergrad.
+
+**Note: I'm not allowed to reveal the interview questions.**
+
+# Preparation
+
+From what I had read online, I knew that the Software Developer Role had 3
+on-site interviews of 45 minutes each:
+
+* Behavioural
+* Algorithmic
+* System Design
+
+I hadn't prepared anything specific for the behavioural interview.
+
+I spent the majority of the time preparing for the algorithmic interview as it is
+by far my weakest point. I'm a developer who likes to develop things and I do have
+knowledge of data structures and algorithms but I usually look them up when needed
+and sometimes even solutions to simple algorithmic problems don't come easily to me.
+(I practised from leetcode, hackerrank and Elements of Programming Interviews)
+
+For the system design interview, I had taken a look at some sample problems online and
+had decided that I would take a closer look at them at a later stage as they
+seemed to be the kind of problems I enjoy solving and would be able to grasp the
+idea easily.
+
+Later on (I don't remember exactly when), I took a closer look at my interview
+confirmation mail and got to know that since I'm an undergrad, instead of the system
+design interview I would have another algorithmic interview (bummer!).
+
+# On-Site
+
+I reached the venue at the specified time and there were a total of 7 people who
+were interviewing that day. There were people who were still doing their undergraduate (like me)
+and others who had just finished in May and had recently joined some other company. We
+were welcomed by the wonderful recruiting team and then after a few introductions, were
+given a schedule of the interviews. I had the interviews in the following order:
+
+* Behavioural
+* Algorithmic 1
+* Algorithmic 2
+
+## Behavioural Interview
+
+The initial 20-30 minutes were discussions on my past experience - stuff like explaining
+any project I had done, my particular role, why I chose to explain that particular project
+now, issues I might have faced while working under someone, while mentoring someone and so
+on. Some examples of the type of questions asked are available at the following
+[link](https://www.glassdoor.com/employers/blog/interview-questions-facebook-asks/).
+
+After that, we had time for a simple algorithmic problem as well which I was supposed to
+solve on a whiteboard. The problem was a pretty basic algorithm wrapped
+up in a real world use-case and I was able to solve it quickly. First I verbally explained
+my solution and then implemented it on the whiteboard.
+
+## Algorithmic Interview 1
+This was one of the interviews I think I messed up in. Usually in 45 minute interviews,
+you have 2 problems which are usually solved in the timeframe and then if there is extra
+time remaining, you get another question on which usually a discussion is just started.
+I solved the first (easy) question and then got stuck on the 2nd one. Even when I managed
+to solve it, the solution wasn't optimal. But, somehow, even though very little time was
+left, I managed to atleast verbally/diagrammatically on the whiteboard, solve the last
+one.
+
+For the second question, I initially wasn't able to think of any solution and ended up
+explaining the brute force solution (my fallback when I'm unable to think of anything).
+Even after further discussions and hints from my interviewer, I arrived at a `O(nk)`
+solution even though the optimal solution would be `O(n)`. I ultimately wrote this
+non-optimal solution on the whiteboard.
+
+The third question was a pretty nice question and I managed an optimal `O(n)` solution.
+We ran out of time before I could write down the whole solution but I managed to
+logically explain my idea.
+
+## Algorithmic Interview 2
+
+This third interview also went pretty well. We managed to finish 10 minutes before time.
+After I solved each question, the interviewer asked what test cases would you pass to
+make this program break and also while solving he asked me to do proper edge case handling
+via `throw`s.
+
+Once I was done with the questions (explaining idea + code), the question
+was modified as a test of how well I had written my code to adjust for
+modifications for a slightly different input and output.
+
+For the 2nd question, I was stuck for some time but once I was given a hint - to think
+on what algorithm I was mentally applying to achieve this series, I managed to solve
+it and write a pretty elegant solution, if I might say so. My code was structured good
+enough for me to make a single line change and add a `throw` at some spot to handle the
+variant of the question asked to me.
+
+## Post Interview
+
+After the interviews, we were given an explaination of how the interviews were reviewed
+and then we were taken on the tour of [the office](https://www.facebook.com/watch/?v=2365658216796909)
+(spoiler alert: its awesome!!) and that was it. The whole interview process was now done.
+
+I was eventually contacted and informed that I would be extended a full-time offer at the
+London Office. Right now, I have accepted the offer and am really looking forward to
+joining there in August this year. Its going to be an amazing experience and I really
+hope I'll learn a lot from it.
+
+
+{{< figure src="/images/best-mail.png" caption="Best mail I've received in my life!!" >}}
