@@ -1,0 +1,121 @@
++++
+draft = false
+date = 2020-01-11T23:02:23+00:00
+title = "2019 Reading"
+slug = "2019-reading"
+tags = []
+categories = [ "books" ]
++++
+
+This is a short post on all the books I read in 2019 and a brief description
+wherever applicable. Total Books Read: 25 (21 new, 4 old) (Spanning 2 Fantasy Epics).
+
+{{< figure src="/images/book-cover-collage-2019.png#center" caption="As you can see, I'm a huge Brandon Sanderson Fan!" >}}
+
+### The Wheel of Time Series (Robert Jordan, Brandon Sanderson) [1st Jan - 11th May]
+ 
+I had begun the Wheel of Time on 20th November 2018. I started reading the
+7th Book on the 29th December and finished it on the 4th of January. I'll
+list all the books after that:
+
+* Book 8: The Path of Daggers (4th January - 13th April)
+  I bought the 8th book right after, but I took a long hiatus from reading
+  after that due to a project I was working on. So it wasn't until mid-April
+  that I completed it.
+* Book 9: Winter's Heart (13th April - 19th April)
+* Book 10: Crossroads of Twilight (19th April - 25th April)
+* Book 11: Knife of Dreams (25th April - 29th April)
+* Book 12: The Gathering Storm (29th April - 4th May)
+* Book 13: Towers of Midnight (4th May - 7th May)
+* Book 14: A Memory of Light (7th May - 11th May)
+
+{{< figure src="/images/wot-end.jpg#center" caption="The End!" width="300px">}}
+
+I had started this series for Brandon Sanderson and he wrote the last 3 books.
+
+### The Sparrow (Mary Doria Russell) [12th May - 14th May]
+
+I found a
+[very interesting reddit post](https://www.reddit.com/r/books/comments/bi3wj7/since_so_many_of_you_asked_im_the_guy_whos_spent/)
+and decided to read up a few books from it. The Sparrow was a very good read
+and quite different from anything I'd read before.
+
+### Mistborn Era 2 (Brandon Sanderson) [25th May - 4th June]
+
+I'd discovered Brandon Sanderson in fall 2018 while reading Mistborn Era 1, bought a
+kindle since I was reading so many of his books on mobile that it was causing me
+headaches and ended up getting into Wheel of Time which took nearly 6 months to
+complete and led me into 2019. I had left Mistborn Era 2 specifically to read it later
+on. I got the opportunity tp do so after finishing The Sparrow.
+
+* The Alloy of Law (25th May - 29th May)
+* Shadows of Self (29th May - 2nd June)
+* The Bands of Mourning (2nd June - 4th June)
+
+I can't wait for the next book in the series!!
+
+### Stormlight Archive (Brandon Sanderson) [? June - 21st June]
+
+I had read the Stormlight Archive before but wanted to go back to its world after
+reading Mistborn (since they are both in the same Cosmere!). I again took a long
+break from reading because I had to move to London and settle in.
+
+* The Way of Kings (? June - 21st June)
+* Words of Radiance (21st June - 9th July)
+* **Diversion**: Arcanum Unbounded: The Cosmere Collection (9th July - 13th July)
+   I even took a break to read the Cosmere short stories by Brandon - Highly
+   Recommend. Few of the best fantasy short stories I have ever read with so much 
+   world building in so few pages! The Scadrial stories require context
+   from Mistborn Era 1, but the rest of the stories need no previous context of the
+   cosmere, although having context really lets you enjoy some of them (e.g. The
+   Emperor's Soul which is based on the same planet as Elantris).
+
+* Oathbringer (13th July - ??)
+
+### Hyperion (Dan Simmons) [?? October - 25th October]
+
+A true masterpiece with so many different interleaving stories. I still need
+to read the rest of the book in the series. I had bought this immediately
+after The Sparrow, but then I got the urge to reread The Stormlight Archive
+and then had to relocate to London so it took some time to complete it.
+
+### White Sand (Brandon Sanderson) [9th November - ?? November]
+
+A set of graphic novels on one of the first stories written by Brandon
+Sanderson (still unpublished). I read them on comiXology on my iPhone and
+it was a pretty good experience. I never expected comics to be so good on
+mobile.
+
+* White Sand 1
+* White Sand 2
+* White Sand 3
+
+### The Gods Themselves (Isaac Asimov) [15th November - 27th November]
+
+I read this purely while commuting to and fro from work. Surprisingly, my first
+Asimov book even though I love sci-fi books! Thanks for the gift Sayash!!
+
+### Starsight (Brandon Sanderson) [27th November - 30th November]
+
+I finished The God's Themselves right on time to read the sequel to Brandon's
+2018 book - Skyward which I've read atleast 3-4 times. I have read it in 2019
+more than once but don't have a definite idea of when.
+
+### Broken Earth Trilogy (N. K. Jemisin) [15th December - 23rd December]
+
+A very famous fantasy series suggested to me by multiple people. I really loved
+the narration style and the ending was pretty satisfying as well.
+
+* The Fifth Season (15th December - 20th December)
+* The Obelisk Gate (20th December - 23rd December)
+* The Stone Sky (23rd December - 25th December)
+
+### The Phoenix Project (Gene Kim, Kevin Behr, George Spafford) [25th December - into 2020]
+
+A Novel about IT, DevOps, and Helping Your Business Win. When I described the premise
+of this book to someone - I got the response:
+
+> That's one of the nerdiest books I've ever heard of!
+
+And its true! I'm really enjoying myself reading this book which describes many of the different
+ways of maximising IT output and I can recognise patterns followed at FB in the book itself.
