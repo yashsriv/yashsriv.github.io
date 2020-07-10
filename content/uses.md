@@ -13,7 +13,9 @@ This page is inspired from the following uses pages:
 
 # Hardware
 
-{{< figure src="/images/home-workspace.png#center" caption="My temporary workspace while I'm home for the summers before joining at Facebook" >}}
+{{< figure src="/images/office-workspace.jpg#center" caption="My office workspace at Facebook" >}}
+
+{{< figure src="/images/covid-workspace.jpg#center" caption="My home workspace during COVID-19 wfh period" >}}
 
 + Primary Laptop
   + [MacBook Pro (15-inch, 2019) (Intel Core i9-9980HQ/32GB RAM)]
@@ -28,20 +30,31 @@ This page is inspired from the following uses pages:
   + ~~128 GB Flash Storage~~
   + ~~Intel HD Graphics 4000 1536MB~~
 + Monitor
-  + [Samsung 23.5 inch Curved LED Backlit Computer Monitor]
+  + [Dell U3219Q] - 32inch 4K (Office Monitor)
+  + [Dell P2720DC] - 27inch QHD/2K (Home monitor)
+  + ~~[Samsung 23.5 inch Curved LED Backlit Computer Monitor]~~
 + Keyboard
+  + [Drop ALT Mechanical Keyboard] (Halo True switches)
   + [Keycool Hero 84 2018 Edition (Cherry MX Brown)]
 + Mouse
+  + [Razer Deathadder Elite]
   + [Apple Magic Trackpad 2]
   + [Logitech G300s Optical Ambidextrous Gaming Mouse]
-+ Laptop Stand
-  + [AmazonBasics Ventilated Laptop Stand]
++ Misc
+  + [Facebook Portal]: For VCs and meetings
+  + Laptop Stand: [AmazonBasics Ventilated Laptop Stand]
+  
 
 # Editor + Terminal
-+ I use [Spacemacs] as my primary editor currently. I really like the unique
++ At Facebook, I use VSCode as the primary editor as that has a lot of
+  integrations with the infra and it just works out-of-the-box. I use it with
+  the VSCodeVIM plugin as I can't live without vim keybindings!
++ Personally, I use [Spacemacs] as my primary editor. I really like the unique
   mnemonic approach of vim keybindings applied to emacs which is the more
   powerful development environment (It just needs a good editor.. I'm kidding).
   + My config can be found [here](https://github.com/yashsriv/dotfiles/blob/master/spacemacs).
+  + If you've never used it, I recommend trying out Magit. Its amazing.
+  + Same for org-mode.
 + For lightweight editing purposes I still prefer vim and my minimal config for
   a good vim experience can be found [here](https://github.com/yashsriv/minimal-vim).
 + I use [st] with custom applied patches as my terminal on my arch linux pc.
@@ -91,4 +104,14 @@ This page is inspired from the following uses pages:
 
 [skhd]: https://github.com/koekeishiya/skhd
 
-[Apple Magic Trackpad 2]: (https://www.apple.com/ie/shop/product/MJ2R2Z/A/magic-trackpad-2-silver)
+[Apple Magic Trackpad 2]: https://www.apple.com/ie/shop/product/MJ2R2Z/A/magic-trackpad-2-silver
+
+[Dell U3219Q]: https://www.dell.com/en-uk/shop/dell-ultrasharp-32-4k-usb-c-monitor-u3219q/apd/210-aquo/monitors-monitor-accessories
+
+[Dell P2720DC]: https://www.dell.com/en-uk/shop/accessories/apd/210-aujs
+
+[Drop ALT Mechanical Keyboard]: https://drop.com/buy/drop-alt-mechanical-keyboard
+
+[Razer Deathadder Elite]: https://www.amazon.co.uk/gp/product/B01MECR863/
+
+[Facebook Portal]: https://portal.facebook.com/gb/
