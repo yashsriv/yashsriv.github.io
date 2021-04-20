@@ -29,7 +29,7 @@ googleAnalytics = "UA-78163300-3"
     keywords = "blog,developer,personal" # Site keywords.
     avatarurl = "images/dp-airstrip.jpg" # Contain the path of the optionnal avatar in the static folder.
 
-    footercontent = "<a href=\"http://www.catb.org/~esr/faqs/hacker-howto.html#what_is\" target=\"_blank\">Hacker</a>. Developer. Geek." # Add footer content
+    footercontent = "Hacker. Developer. Geek." # Add footer content
 
     # Whether you want to hide copyright and credits in the footer.
     hideCredits = true
