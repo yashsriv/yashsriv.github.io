@@ -41,7 +41,7 @@ This page is inspired from the following uses pages:
   + [Apple Magic Trackpad 2]
   + [Logitech G300s Optical Ambidextrous Gaming Mouse]
 + Misc
-  + [Facebook Portal]: For VCs and meetings
+  + [~~Facebook~~ Meta Portal](https://portal.facebook.com/): For VCs and meetings
   + Laptop Stand: [AmazonBasics Ventilated Laptop Stand]
   
 
@@ -113,5 +113,3 @@ This page is inspired from the following uses pages:
 [Drop ALT Mechanical Keyboard]: https://drop.com/buy/drop-alt-mechanical-keyboard
 
 [Razer Deathadder Elite]: https://www.amazon.co.uk/gp/product/B01MECR863/
-
-[Facebook Portal]: https://portal.facebook.com/gb/

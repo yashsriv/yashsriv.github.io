@@ -24,9 +24,9 @@ googleAnalytics = "UA-78163300-3"
 
 [params] # theme parameters
     author = "Yash Srivastav" # Author's name.
-    info = "Software Engineer, Facebook London" # Author's job title or info.
+    info = "Software Engineer @ Meta (London, UK)" # Author's job title or info.
     description = "Yash Srivastav's personal website" # Site description.
-    keywords = "blog,developer,personal" # Site keywords.
+    keywords = "blog,developer,personal,facebook,meta" # Site keywords.
     avatarurl = "images/dp-airstrip.jpg" # Contain the path of the optionnal avatar in the static folder.
 
     footercontent = "Hacker. Developer. Geek." # Add footer content
@@ -74,7 +74,7 @@ googleAnalytics = "UA-78163300-3"
     name = "Twitter"
     icon = "fab fa-twitter fa-2x"
     weight = 3
-    url = "https://twitter.com/therealyashsriv/"
+    url = "https://twitter.com/yashsriv98/"
 
 [languages]
     [languages.en]
